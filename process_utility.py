@@ -15,16 +15,16 @@ def read_file( filename, samples = 1024 ):
 
 def plot_waveform( dts, data ):
     plt.plot(dts,data)
-    plt.xlabel('time (ns)')
-    plt.ylabel('channels')
+    plt.xlabel('time (ns)',ha='right',x=1)
+    plt.ylabel('channels',ha='right',y=1)
 
 
 def plot_waveforms( dts, data, events = 5 ):
     plt.figure(figsize=(12,6))
     for i in range(events):
         plt.plot(dts,data[i][:])
-    plt.xlabel('tims (ns)')
-    plt.ylabel('channels')
+    plt.xlabel('tims (ns)',ha='right',x=1)
+    plt.ylabel('channels',ha='right',y=1)
     
 
 def plot_waveforms2( dts, data, events = 5 ):
@@ -101,8 +101,8 @@ def integral(t, wf, dtl = -1, dtr = 5, tfit = 1000, tlim = 2000, info = False, p
             plt.vlines((tm+tfit)/1000, wf[t >= tfit][0]-10, bl+10, colors = 'c',
                        label = 'fit limit')
             plt.vlines((tm+tlim)/1000, wf[t >= tlim][0]-10, bl+10, colors = 'g')
-            plt.xlabel(r'time ($\mu s$)')
-            plt.ylabel('amplitude')
+            plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
+            plt.ylabel('amplitude',ha='right',y=1)
             plt.legend()
         intr, err = integ.quad(fct_int, 0, dtr)
         if a < 0 or b < 0:
@@ -120,12 +120,12 @@ def integral(t, wf, dtl = -1, dtr = 5, tfit = 1000, tlim = 2000, info = False, p
 def histo_plot(I, xmin = 0, xmax = 10000, binning = 200): # make a simple histogram
     plt.figure(figsize=(12,6))
     plt.hist(I, bins = np.linspace(xmin, xmax, binning))
-    plt.xlabel('area')
-    plt.ylabel('number of events')
+    plt.xlabel('area',ha='right',x=1)
+    plt.ylabel('number of events',ha='right',y=1)
 
 
-def gaussian(x, a, b, c):
-    return(a*np.exp(-b*(x-c)**2))
+def gaussian(x, a, mu, sigma):
+    return a * np.exp(-(x - mu)**2 / (2. * sigma**2))
 
 def histo_fit(x, y, fit = True, a = 1, b = 15, graph = False): #gaussian fit of a histogram
     # a and b are the limits of the fit (in microsec)
@@ -140,8 +140,8 @@ def histo_fit(x, y, fit = True, a = 1, b = 15, graph = False): #gaussian fit of 
     plt.plot(x, y, marker = '.', linestyle = '', label = 'data')
     X = np.linspace(a, b, num  = 100)
     plt.plot(X, gaussian(X, *popt), label = 'gaussian fit \n max at %s'%xm)
-    plt.xlabel(r'area ($\times 10^{-6}$)')
-    plt.ylabel('number of events (log)')
+    plt.xlabel(r'area ($\times 10^{-6}$)',ha='right',x=1)
+    plt.ylabel('number of events (log)',ha='right',y=1)
     plt.legend()
 
     
@@ -152,8 +152,8 @@ def search_peaks(t, wf, n, ampllim = 9, plot = False): # search all the peaks of
     dled = wf[:-n] - wf[n:] # derivative
     if plot:
         plt.plot(t[:-n]/1000, wf[:-n] - wf[n:], label = 'dled signal')
-        plt.xlabel(r'time ($\mu s$)')
-        plt.ylabel('amplitude')
+        plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
+        plt.ylabel('amplitude',ha='right',y=1)
         plt.legend()
     N = np.array([i for i in range(len(dled))]) # we will work in term of bin-size instead of time
     N1 = N[dled >= ampllim]
@@ -251,7 +251,73 @@ def integral_dled( wf, peaks_list, dtl = -2, dtr = 1,
     if plot:
         #plt.plot(tplot_tot, A_tot)
         plt.plot(tt/100, wf0, label = 'SiPM signal')
-        plt.xlabel(r'time ($\mu s$)')
-        plt.ylabel('amplitude')
+        plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
+        plt.ylabel('amplitude',ha='right',y=1)
         plt.legend()
+    if inttot is not 0: return inttot
+    
+
+def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
+                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, plot=False):
+    # tlim = time window of the fit integration
+    # tfit = time window of the fit
+    # tc = min time to consider 2 peaks independently
+    # tll = left limit of the window to search baseline value
+    # tlr = right limit of the window to search Amin
+    inttot = 0
+    blmoy = wf.max()
+    wf0 = wf - blmoy
+    tt = np.array([i for i in range(len(wf))]) # time in bin-size
+    tplot_tot = []
+    A_tot = []
+    for i in range(len(peaks_list)//2):
+        dt = peaks_list[2*i + 1] - peaks_list[2*i]
+        if dt < tc: continue #skip peaks if is too close to next one
+        tlo = peaks_list[2*i]-tll
+        if tlo < 0: tlo = 0
+        bl = np.max(wf0[tlo:peaks_list[2*i]+1])
+        Am = wf0[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
+        ttm = tt[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
+        Amin = np.min(Am) #local min of the signal
+        tmin = ttm[Am == Amin][0] #time of the min
+        if tmin-len(wf)/2 > 15 or tmin-len(wf)/2 < 0: continue #fit only central peak
+        tl = tt[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
+        wfl = wf0[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
+        Il = -1*integ.simps(wfl, tl/100)
+        tr = tt[tmin+dtr:tmin+tfit] # time window for the fit
+        amp = bl - Amin
+        if len(tr) >= 5 and amp > 0:
+            tr2 = tr - tr[0]
+            #print('tmin:',tmin,'bl:',bl,'amp max:',amp)
+            #try:
+            fct_fit = expo2(bl) # fct used for the fit
+            popt, pcov = curve_fit(fct_fit, tr2/100, wf0[tr],
+                                    p0 = np.array([amp, 6.8]),
+                                    bounds =  ([amp/1.5, 6.7], [amp*1.5, 6.8]))
+            a, b = popt
+            tnew = tt[tr[0]:]
+            if plot:
+                fct_fit_tot = fct_fit((tnew-tr[0])/100,a,b)
+                tnew2 = min(tlim, tt[-1]-tr[0])
+                tplot = tt[tmin+dtl-20:tmin+tnew2+20]
+                plt.plot(tplot/100,wf0[tmin+dtl-20:tmin+tnew2+20],label='SiPM signal')
+                plt.plot(tnew[:tnew2]/100, fct_fit_tot[:tnew2],
+                         label=f'fit f(x) = baseline - a*exp(-b*x):\n a = {a:.2f}, b = {b:.2f}')
+                plt.axhline(bl, color = 'r', label = 'baseline')
+                plt.vlines((tmin+dtl)/100, wf0[tmin+dtl]-10, bl+10, colors = 'g',
+                           label = 'integration limits')
+                plt.vlines((tmin+dtr)/100, wf0[tmin+dtr]-10, bl+10, colors = 'g')
+                plt.vlines((tmin+tfit)/100, wf0[tmin+tfit]-10, bl+10, colors = 'c',
+                           label = 'fit limit')
+                plt.vlines((tmin+tlim)/100, wf0[tmin+tlim]-10, bl+10, colors = 'g')
+                plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
+                plt.ylabel('amplitude',ha='right',y=1)
+                plt.legend()
+                tlimplot = tr[0]
+            fct_int = lambda x : bl - fct_fit(x, a, b)
+            #print('bl, a, b : ', bl, a, b)
+            Ir, err = integ.quad(fct_int, 0, (tlim-dtr)/100)
+            inttot = Il + Ir
+            #print(f'Integral: {Il:.1f} + {Ir:.1f} = {inttot:.2f}')
+            tl = tt[tt >= peaks_list[2*i+1]+dtl]
     if inttot is not 0: return inttot
