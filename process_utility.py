@@ -321,3 +321,93 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
             #print(f'Integral: {Il:.1f} + {Ir:.1f} = {inttot:.2f}')
             tl = tt[tt >= peaks_list[2*i+1]+dtl]
     if inttot is not 0: return inttot
+
+
+def spectrum_fit(peaks_integral, a = 1, b = 15, bins = 100, plot = False):
+    h, t = np.histogram(peaks_integral, bins=bins, range=(a,b))
+    pe = []
+    pe_err = []
+    # search first 2 peaks
+    tmax = np.argmax(h)
+    hmax = h[tmax]
+    idxp = np.where(h > hmax/5)
+    tmax0, hmax0 = h[idxp[0][0]], h[idxp[0][0]]
+    i = 1
+    while h[i+idxp[0][0]] > hmax0:
+        tmax0 = t[i+idxp[0][0]]
+        hmax0 = h[i+idxp[0][0]]
+        imax0 = i+idxp[0][0]
+        i += 1
+    ii, idx1 = 0, idxp[0][i]
+    while idxp[0][ii+1]-idxp[0][ii] <= 1:
+        idx1 = idxp[0][ii+2]
+        ii += 1
+    iii = 1
+    tmax1, hmax1 = t[idx1], h[idx1]
+    while h[idx1+iii] > hmax1:
+        tmax1 = t[iii+idx1]
+        hmax1 = h[iii+idx1]
+        imax1 = iii+idx1
+        iii += 1
+    
+    ################################################
+    if plot:
+        plt.figure(figsize=(12,6))
+        plt.plot(t[:bins], h, '-', label = 'data')
+        plt.xlabel(r'area ($ADC\times \mu$s)',ha='right',x=1,fontsize=12)
+        plt.ylabel('number of events',ha='right',y=1,fontsize=12)
+    fit_not_failed = True
+    npe = 1
+    while fit_not_failed:
+        t_max = npe*(tmax1-tmax0)+(2*tmax0-tmax1)
+        i_max = npe*(imax1-imax0)+(2*imax0-imax1)
+        #h0, t0 = np.histogram(peaks_integral, bins=100, range=(t_max-1.2,t_max+1.2))
+        di = 30
+        t0, h0 = t[i_max-di:i_max+di], h[i_max-di:i_max+di]
+        try:
+            mu = t0[np.argmax(h0)]
+            imax = np.argmax(h0)
+            hmax = h0[imax]
+            idx = np.where(h0>hmax/2) # fwhm 
+            ilo, ihi = idx[0][0], idx[0][-1]
+            sig = (t0[ihi]-t0[ilo]) / 2.355
+            idx = np.where(((t0-mu) > -8 * sig) & ((t0-mu) < 8 * sig))
+            idx0 = np.where(((t0-mu) > -4.5 * sig) & ((t0-mu) < 4.5 * sig))
+            ilo, ihi = idx[0][0], idx[0][-1]
+            ilo0, ihi0 = idx0[0][0], idx0[0][-1]
+            t0, h0 = t0[ilo:ihi], h0[ilo:ihi]
+            popt, pcov = curve_fit(gaussian, t0, h0, p0 = np.array([hmax, mu, sig]))
+            perr = np.sqrt(np.diag(pcov))
+            tmu = popt[1]
+            if i is 0: tmax0, imax0 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
+            if i is 1: tmax1, imax1 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
+            pe.append(tmu)
+            pe_err.append(perr[1])
+            print(fr'PE {npe} at {tmu:.2f} +/- {perr[1]:.2f} ADC x us')
+            npe += 1
+            if plot:
+                X = np.linspace(a, b, num  = 100)
+                #plt.plot(t0, h0, marker = '.', linestyle = '', label = 'data')
+                plt.plot(X, gaussian(X, *popt), label = f'PE{npe} at {tmu:.2f} ADC x us')
+                plt.legend(fontsize=12)
+        except:
+            fit_not_failed = False
+            break
+    return pe, pe_err
+
+
+def retta(x, a, b):
+    return a + b * x
+
+
+def fit_pe(pe,pe_err):
+    x = range(1,len(pe)+1)
+    popt, pcov = curve_fit(retta, x, pe)
+    plt.figure(figsize=(12,6))
+    plt.errorbar(x, pe, yerr=pe_err,color='b',marker='.',linestyle='',label='data: 27.5 V')
+    plt.plot(x, retta(x, *popt), 'r-',
+             label='fit: $a+n_{PE}*b$ \n a=%5.2f $ADC~x~\mu$s \n b=%5.2f $ADC~x~\mu$s' % tuple(popt))
+    plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1,fontsize=12)
+    plt.xlabel('PE number',ha='right',x=1,size=40,fontsize=12)
+    plt.legend(fontsize=12)
+    return popt
