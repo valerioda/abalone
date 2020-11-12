@@ -400,14 +400,36 @@ def retta(x, a, b):
     return a + b * x
 
 
-def fit_pe(pe,pe_err):
-    x = range(1,len(pe)+1)
-    popt, pcov = curve_fit(retta, x, pe)
+def retta0(x, a):
+    return a * x
+
+
+def fit_pe(pe, pe_err, firstpe = 1, npe = 14, rlim = 0.1, offset = True):
+    x = range(firstpe,len(pe)+firstpe)
+    x0 = range(0,len(pe)+firstpe)
+    func = retta0
+    if offset: func = retta
+    popt, pcov = curve_fit(func, x, pe)
     plt.figure(figsize=(12,6))
     plt.errorbar(x, pe, yerr=pe_err,color='b',marker='.',linestyle='',label='data: 27.5 V')
-    plt.plot(x, retta(x, *popt), 'r-',
-             label='fit: $a+n_{PE}*b$ \n a=%5.2f $ADC~x~\mu$s \n b=%5.2f $ADC~x~\mu$s' % tuple(popt))
+    if offset: plt.plot(x0, func(x0, *popt), 'r-',
+                        label='fit: $a+n_{PE}*b$ \n a=%5.2f $ADC~x~\mu$s \n b=%5.2f $ADC~x~\mu$s' % tuple(popt))
+    else: plt.plot(x0, func(x0, *popt), 'r-',
+                   label='fit: $n_{PE} * a$ \n a=%5.2f $ADC~x~\mu$s' % tuple(popt))
     plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1,fontsize=12)
     plt.xlabel('PE number',ha='right',x=1,size=40,fontsize=12)
+    plt.legend(fontsize=12)
+    plt.xlim(0,npe)
+    #residuals
+    residual = np.zeros(len(pe))
+    for i,p in enumerate(pe):
+        residual[i] = p-func(i+firstpe, *popt)
+    plt.figure(figsize=(12,6))
+    plt.errorbar(x,residual,yerr=pe_err,color='b',marker='.',linestyle='',label='residuals')
+    plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1,fontsize=12)
+    plt.xlabel('PE number',ha='right',x=1,size=40,fontsize=12)
+    plt.axhline(0,color='r')
+    plt.xlim(0,npe)
+    plt.ylim(-rlim,rlim)
     plt.legend(fontsize=12)
     return popt
