@@ -323,14 +323,14 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
     if inttot is not 0: return inttot
 
 
-def spectrum_fit(peaks_integral, a = 1, b = 15, bins = 100, plot = False):
+def spectrum_fit(peaks_integral, a = 1, b = 40, bins = 1000, hlim = 300, plot = False):
     h, t = np.histogram(peaks_integral, bins=bins, range=(a,b))
     pe = []
     pe_err = []
     # search first 2 peaks
     tmax = np.argmax(h)
     hmax = h[tmax]
-    idxp = np.where(h > hmax/5)
+    idxp = np.where(h > hlim)
     tmax0, hmax0 = h[idxp[0][0]], h[idxp[0][0]]
     i = 1
     while h[i+idxp[0][0]] > hmax0:
@@ -410,17 +410,21 @@ def fit_pe(pe, pe_err, firstpe = 1, npe = 14, rlim = 0.1, offset = True):
     func = retta0
     if offset: func = retta
     popt, pcov = curve_fit(func, x, pe)
+    perr = np.sqrt(np.diag(pcov))
+    
+    # plot
     plt.figure(figsize=(12,6))
     plt.errorbar(x, pe, yerr=pe_err,color='b',marker='.',linestyle='',label='data: 27.5 V')
     if offset: plt.plot(x0, func(x0, *popt), 'r-',
-                        label='fit: $a+n_{PE}*b$ \n a=%5.2f $ADC~x~\mu$s \n b=%5.2f $ADC~x~\mu$s' % tuple(popt))
+                        label=f'fit: $a+nPE\cdot b$ \n a=({popt[0]:.2f}$\pm${perr[0]:.2f}) $ADC~x~\mu$s \n b=({popt[1]:.2f}$\pm${perr[1]:.2f}) $ADC~x~\mu$s')
     else: plt.plot(x0, func(x0, *popt), 'r-',
-                   label='fit: $n_{PE} * a$ \n a=%5.2f $ADC~x~\mu$s' % tuple(popt))
+                   label=f'fit: $nPE\cdot a$ \n a=({popt[0]:.2f}$\pm${perr[0]:.2f}) $ADC~x~\mu$s')
     plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1,fontsize=12)
     plt.xlabel('PE number',ha='right',x=1,size=40,fontsize=12)
     plt.legend(fontsize=12)
     plt.xlim(0,npe)
-    #residuals
+    
+    # residuals
     residual = np.zeros(len(pe))
     for i,p in enumerate(pe):
         residual[i] = p-func(i+firstpe, *popt)
@@ -432,4 +436,4 @@ def fit_pe(pe, pe_err, firstpe = 1, npe = 14, rlim = 0.1, offset = True):
     plt.xlim(0,npe)
     plt.ylim(-rlim,rlim)
     plt.legend(fontsize=12)
-    return popt
+    return popt, perr
