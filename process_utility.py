@@ -1,9 +1,9 @@
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.integrate as integ
-from scipy.optimize import curve_fit 
-import pandas as pd
-import scipy.integrate as integ
+from scipy.optimize import curve_fit
+from scipy.signal import find_peaks
 
 def read_file( filename, samples = 1024 ):
     data = np.fromfile(filename,  dtype=np.int16)
@@ -145,10 +145,11 @@ def histo_fit(x, y, fit = True, a = 1, b = 15, graph = False): #gaussian fit of 
     plt.legend()
 
     
-def search_peaks(t, wf, n, ampllim = 9, plot = False): # search all the peaks of the signal
+def search_peaks(wf, n, ampllim = 9, plot = False): # search all the peaks of the signal
     # n: nb of bin-size for the dled delay (dled = "discret derivative")
     # ampllim: min amplitude to select a peak
     L = []
+    t = np.arange(0,len(wf)*10,10)
     dled = wf[:-n] - wf[n:] # derivative
     if plot:
         plt.plot(t[:-n]/1000, wf[:-n] - wf[n:], label = 'dled signal')
@@ -323,45 +324,30 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
     if inttot is not 0: return inttot
 
 
-def spectrum_fit(peaks_integral, a = 1, b = 40, bins = 1000, hlim = 300, plot = False):
+def spectrum_fit(peaks_integral,nsipm,volt,a=1,b=40,bins=1000,hlim=300,firstpe=1,lastpe=12, plot=False):
     h, t = np.histogram(peaks_integral, bins=bins, range=(a,b))
     pe = []
     pe_err = []
-    # search first 2 peaks
-    tmax = np.argmax(h)
-    hmax = h[tmax]
-    idxp = np.where(h > hlim)
-    tmax0, hmax0 = h[idxp[0][0]], h[idxp[0][0]]
-    i = 1
-    while h[i+idxp[0][0]] > hmax0:
-        tmax0 = t[i+idxp[0][0]]
-        hmax0 = h[i+idxp[0][0]]
-        imax0 = i+idxp[0][0]
-        i += 1
-    ii, idx1 = 0, idxp[0][i]
-    while idxp[0][ii+1]-idxp[0][ii] <= 1:
-        idx1 = idxp[0][ii+2]
-        ii += 1
-    iii = 1
-    tmax1, hmax1 = t[idx1], h[idx1]
-    while h[idx1+iii] > hmax1:
-        tmax1 = t[iii+idx1]
-        hmax1 = h[iii+idx1]
-        imax1 = iii+idx1
-        iii += 1
+    # search peaks
+    peaks, _ = find_peaks(h, height=hlim, width=5, distance=10)
+    imax0, imax1 = peaks[0], peaks[1]
+    tmax0, tmax1 = t[imax0], t[imax1]
     
     ################################################
     if plot:
         plt.figure(figsize=(12,6))
-        plt.plot(t[:bins], h, '-', label = 'data')
+        plt.plot(t[:bins], h, '-', label = f'SiPM-{nsipm} at {volt} V')
+        plt.plot(t[peaks], h[peaks], "x")
         plt.xlabel(r'area ($ADC\times \mu$s)',ha='right',x=1,fontsize=12)
         plt.ylabel('number of events',ha='right',y=1,fontsize=12)
+    
     fit_not_failed = True
-    npe = 1
-    while fit_not_failed:
-        t_max = npe*(tmax1-tmax0)+(2*tmax0-tmax1)
-        i_max = npe*(imax1-imax0)+(2*imax0-imax1)
-        #h0, t0 = np.histogram(peaks_integral, bins=100, range=(t_max-1.2,t_max+1.2))
+    npe = firstpe
+    while fit_not_failed and npe <= lastpe and npe < len(peaks)+firstpe:
+        #t_max = npe*(tmax1-tmax0)+((firstpe+1)*tmax0-firstpe*tmax1)
+        #i_max = npe*(imax1-imax0)+((firstpe+1)*imax0-firstpe*imax1)
+        i_max = peaks[npe-firstpe]
+        t_max = t[i_max]
         di = 30
         t0, h0 = t[i_max-di:i_max+di], h[i_max-di:i_max+di]
         try:
@@ -379,18 +365,19 @@ def spectrum_fit(peaks_integral, a = 1, b = 40, bins = 1000, hlim = 300, plot = 
             popt, pcov = curve_fit(gaussian, t0, h0, p0 = np.array([hmax, mu, sig]))
             perr = np.sqrt(np.diag(pcov))
             tmu = popt[1]
-            if i is 0: tmax0, imax0 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
-            if i is 1: tmax1, imax1 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
+            if npe is firstpe: tmax0, imax0 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
+            if npe is firstpe+1: tmax1, imax1 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
             pe.append(tmu)
             pe_err.append(perr[1])
             print(fr'PE {npe} at {tmu:.2f} +/- {perr[1]:.2f} ADC x us')
-            npe += 1
             if plot:
                 X = np.linspace(a, b, num  = 100)
                 #plt.plot(t0, h0, marker = '.', linestyle = '', label = 'data')
                 plt.plot(X, gaussian(X, *popt), label = f'PE{npe} at {tmu:.2f} ADC x us')
                 plt.legend(fontsize=12)
+            npe += 1
         except:
+            print(npe,'fit failed',t[int(i_max-ilim)],t[int(i_max+ilim)],hmax,mu,sig)
             fit_not_failed = False
             break
     return pe, pe_err
@@ -404,7 +391,7 @@ def retta0(x, a):
     return a * x
 
 
-def fit_pe(pe, pe_err, firstpe = 1, npe = 14, rlim = 0.1, offset = True):
+def fit_pe(pe, pe_err, nsipm, volt, firstpe = 1, npe = 14, rlim = 0.1, offset = True):
     x = range(firstpe,len(pe)+firstpe)
     x0 = range(0,len(pe)+firstpe)
     func = retta0
@@ -414,7 +401,7 @@ def fit_pe(pe, pe_err, firstpe = 1, npe = 14, rlim = 0.1, offset = True):
     
     # plot
     plt.figure(figsize=(12,6))
-    plt.errorbar(x, pe, yerr=pe_err,color='b',marker='.',linestyle='',label='data: 27.5 V')
+    plt.errorbar(x, pe, yerr=pe_err,color='b',marker='.',linestyle='',label=f'SiPM-{nsipm} at {volt} V')
     if offset: plt.plot(x0, func(x0, *popt), 'r-',
                         label=f'fit: $a+nPE\cdot b$ \n a=({popt[0]:.2f}$\pm${perr[0]:.2f}) $ADC~x~\mu$s \n b=({popt[1]:.2f}$\pm${perr[1]:.2f}) $ADC~x~\mu$s')
     else: plt.plot(x0, func(x0, *popt), 'r-',
