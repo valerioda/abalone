@@ -330,10 +330,7 @@ def spectrum_fit(peaks_integral,nsipm,volt,a=1,b=40,bins=1000,hlim=300,firstpe=1
     pe_err = []
     # search peaks
     peaks, _ = find_peaks(h, height=hlim, width=5, distance=10)
-    imax0, imax1 = peaks[0], peaks[1]
-    tmax0, tmax1 = t[imax0], t[imax1]
     
-    ################################################
     if plot:
         plt.figure(figsize=(12,6))
         plt.plot(t[:bins], h, '-', label = f'SiPM-{nsipm} at {volt} V')
@@ -344,8 +341,6 @@ def spectrum_fit(peaks_integral,nsipm,volt,a=1,b=40,bins=1000,hlim=300,firstpe=1
     fit_not_failed = True
     npe = firstpe
     while fit_not_failed and npe <= lastpe and npe < len(peaks)+firstpe:
-        #t_max = npe*(tmax1-tmax0)+((firstpe+1)*tmax0-firstpe*tmax1)
-        #i_max = npe*(imax1-imax0)+((firstpe+1)*imax0-firstpe*imax1)
         i_max = peaks[npe-firstpe]
         t_max = t[i_max]
         di = 30
@@ -364,20 +359,16 @@ def spectrum_fit(peaks_integral,nsipm,volt,a=1,b=40,bins=1000,hlim=300,firstpe=1
             t0, h0 = t0[ilo:ihi], h0[ilo:ihi]
             popt, pcov = curve_fit(gaussian, t0, h0, p0 = np.array([hmax, mu, sig]))
             perr = np.sqrt(np.diag(pcov))
-            tmu = popt[1]
-            if npe is firstpe: tmax0, imax0 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
-            if npe is firstpe+1: tmax1, imax1 = tmu, np.where(abs(t-tmu)<0.05)[0][0]
-            pe.append(tmu)
+            pe.append(popt[1])
             pe_err.append(perr[1])
-            print(fr'PE {npe} at {tmu:.2f} +/- {perr[1]:.2f} ADC x us')
+            print(fr'PE {npe} at {popt[1]:.2f} +/- {perr[1]:.2f} ADC x us')
             if plot:
                 X = np.linspace(a, b, num  = 100)
-                #plt.plot(t0, h0, marker = '.', linestyle = '', label = 'data')
-                plt.plot(X, gaussian(X, *popt), label = f'PE{npe} at {tmu:.2f} ADC x us')
+                plt.plot(X, gaussian(X, *popt), label = f'PE{npe} at {popt[1]:.2f} ADC x us')
                 plt.legend(fontsize=12)
             npe += 1
         except:
-            print(npe,'fit failed',t[int(i_max-ilim)],t[int(i_max+ilim)],hmax,mu,sig)
+            print(npe,'fit failed')
             fit_not_failed = False
             break
     return pe, pe_err
