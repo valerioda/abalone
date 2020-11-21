@@ -13,13 +13,15 @@ def read_file( filename, samples = 1024 ):
     return data
 
 
-def plot_waveform( dts, data ):
+def plot_waveform( data ):
+    dts = np.arange(0,data.shape[1]*10,10)
     plt.plot(dts,data)
     plt.xlabel('time (ns)',ha='right',x=1)
     plt.ylabel('channels',ha='right',y=1)
 
 
-def plot_waveforms( dts, data, events = 5 ):
+def plot_waveforms( data, events = 5 ):
+    dts = np.arange(0,data.shape[1]*10,10)
     plt.figure(figsize=(12,6))
     for i in range(events):
         plt.plot(dts,data[i][:])
@@ -27,14 +29,16 @@ def plot_waveforms( dts, data, events = 5 ):
     plt.ylabel('channels',ha='right',y=1)
     
 
-def plot_waveforms2( dts, data, events = 5 ):
+def plot_waveforms2( data, events = 5 ):
+    dts = np.arange(0,data.shape[1]*10,10)
     fig, axs = plt.subplots(events, figsize=(12,10))
     for i in range(events):
         axs[i].plot(dts,data[i][:])
         axs[i].set(xlabel='time (ns)', ylabel='channels')
 
         
-def plot_waveforms_comparison( dts, data1, data2, events = 5 ):
+def plot_waveforms_comparison( data1, data2, events = 5 ):
+    dts = np.arange(0,data1.shape[1]*10,10)
     fig, axs = plt.subplots(events,2,  figsize=(15,2*events) )
     for i in range(events):
         axs[i,0].plot(dts,data1[i][:], color='red')
@@ -324,12 +328,12 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
     if inttot is not 0: return inttot
 
 
-def spectrum_fit(peaks_integral,nsipm,volt,a=1,b=40,bins=1000,hlim=300,firstpe=1,lastpe=12, plot=False):
+def spectrum_fit(peaks_integral,nsipm,volt,a=0,b=40,bins=1000,hlim=300,firstpe=1,lastpe=12, plot=False):
     h, t = np.histogram(peaks_integral, bins=bins, range=(a,b))
     pe = []
     pe_err = []
     # search peaks
-    peaks, _ = find_peaks(h, height=hlim, width=5, distance=10)
+    peaks, _ = find_peaks(h, height=hlim, width=5, distance=15)
     
     if plot:
         plt.figure(figsize=(12,6))
