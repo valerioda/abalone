@@ -33,7 +33,7 @@ def main():
     if args['sipm']:
         sipm = args['sipm'][0]
     else:
-        print('Number of SiPM not given')
+        #print('Number of SiPM not given')
         return
     
     if args['voltages']:
@@ -65,7 +65,7 @@ def main():
     return
 
 def calculate_integrals( sipm, date, v_int, v_frac, npeaks = 0, d_out = '.' ):
-    try: data = psu.read_file(f'data/{date}/SiPM{sipm}_{v_int}_{v_frac}_LED2p75.dat')
+    try: data = psu.read_file(f'/data/abalone/{date}/SiPM{sipm}_{v_int}_{v_frac}_LED2p75.dat')
     except: return
     nn = len(data)
     peakint = np.zeros(nn)
@@ -74,7 +74,7 @@ def calculate_integrals( sipm, date, v_int, v_frac, npeaks = 0, d_out = '.' ):
     if npeaks == 0: npeaks = nn
     for i in range(npeaks):
         listpeaks = psu.search_peaks(data[i], 4, 2, False)
-        peakint[i] = psu.integral_central_peak(data[i],listpeaks,-8,1,10,100,5,8,10)
+        peakint[i] = psu.integral_central_peak(data[i],listpeaks,-5,1,10,100,5,8,10)
         diff = time.time() - t_start
         if (i % 1000) == 0:
             print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')

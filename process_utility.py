@@ -419,3 +419,14 @@ def fit_pe(pe, pe_err, nsipm, volt, firstpe = 1, npe = 14, rlim = 0.1, offset = 
     plt.ylim(-rlim,rlim)
     plt.legend(fontsize=12)
     return popt, perr
+
+def process_pe_spectrum(nsipm, v, firstpe, lastpe, maxarea, bins, hlim, xlim, ylim, date = 0):
+    v_int = int(v)
+    v_frac = int((v-v_int)*10)
+    if date: peakint = np.load(f'SiPM{nsipm}/peakint_SiPM{nsipm}_{v_int}_{v_frac}_LED2p75_{date}.npy')
+    else: peakint = np.load(f'SiPM{nsipm}/peakint_SiPM{nsipm}_{v_int}_{v_frac}_LED2p75.npy')
+    npeaks = len(peakint[peakint>0])
+    print('SiPM',nsipm,'with',v_int+v_frac/10,' V, Number of values:',npeaks)
+    pe, pe_err = spectrum_fit(peakint,nsipm, v,1,maxarea,bins,hlim,firstpe,lastpe,plot=True)
+    par, par_err = fit_pe(pe,pe_err,nsipm, v,firstpe,xlim,ylim,offset=1)
+    return par, par_err, npeaks, pe, pe_err
