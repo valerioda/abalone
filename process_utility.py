@@ -264,7 +264,7 @@ def integral_dled( wf, peaks_list, dtl = -2, dtr = 1,
     
 
 def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
-                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, plot=False):
+                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, central=True, plot=False):
     # tlim = time window of the fit integration
     # tfit = time window of the fit
     # tc = min time to consider 2 peaks independently
@@ -286,7 +286,7 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
         ttm = tt[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
         Amin = np.min(Am) #local min of the signal
         tmin = ttm[Am == Amin][0] #time of the min
-        if tmin-len(wf)/2 > 30 or tmin-len(wf)/2 < -30: continue #fit only central peak
+        if (central) and ((tmin-len(wf)/2 > 30) or (tmin-len(wf)/2 < -30)): continue #fit only central peak
         tl = tt[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         wfl = wf0[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         Il = -1*integ.simps(wfl, tl/100)
