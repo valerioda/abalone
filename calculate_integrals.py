@@ -19,11 +19,13 @@ def main():
     arg, st, sf = par.add_argument, 'store_true', 'store_false'
     arg('-d', '--date', nargs=1, action='store', help = 'Date in format YYYY_MM_DD')
     arg('-s', '--sipm', nargs=1, action='store', help = 'SiPM number')
-    arg('-v', '--voltages', nargs=2, action='store', help = 'Voltage interval')
-    arg('-st', '--step', nargs=1, action='store', help = 'Voltage step')
     arg('-n', '--number', nargs=1, action='store', help = 'Number of peak to integrate')
+    arg('-sc', '--sipmcalibration', nargs=1, action='store', help = 'SiPM Calibration')
+    arg('-v', '--voltages', nargs=2, action='store', help = 'Voltage interval')
+    arg('-f', '--file', nargs=1, action='store', help = 'Data file')
+    arg('-ft', '--fitparameters', nargs=5, action='store', help = 'Fit parameters')
     args = vars(par.parse_args())
-    
+
     if args['date']:
         date = args['date'][0]
     else:
@@ -33,52 +35,75 @@ def main():
     if args['sipm']:
         sipm = args['sipm'][0]
     else:
-        #print('Number of SiPM not given')
+        print('Number of SiPM not given')
         return
-    
-    if args['voltages']:
-        vstart, vend = float(args['voltages'][0]), float(args['voltages'][1])+0.1
-    else:
-        print('Voltage interval not given')
-        return
-    
-    step = 0.5
-    if args['step']: step = float(args['step'][0])
+
+    parameters = [-4, 1, 10, 100, 4]
+    if args['fitparameters']:
+        parameters = np.array(args['fitparameters'][:],dtype=int)
     
     npeaks = 0
     if args['number']: npeaks = int(args['number'][0])
-
     local_dir = '.'
-    d_out = f'{local_dir}/SiPM{sipm}'
+    
+    # START SIPM CALIBRATION
+    if args['sipmcalibration']:
+        
+        if args['voltages']:
+            vstart, vend = float(args['voltages'][0]), float(args['voltages'][1])+0.1
+        else:
+            print('Voltage interval not given')
+        return
+        step = 0.5
+        d_out = f'{local_dir}/SiPM{sipm}'
+        try: os.mkdir(d_out)
+        except: pass
+        
+        print('Calculate integrals for SiPM n.',sipm,', voltage from ',vstart,'to',vend,'V')
+    
+        voltages = np.arange(vstart,vend,step)
+        for v in voltages:
+            v_int = int(v)
+            v_frac = int((v-v_int)*10)
+            try: data = psu.read_file(f'/data/abalone/{date}/SiPM{sipm}_{v_int}_{v_frac}_LED2p75.dat')
+            except: return
+            print('SiPM',sipm,'Voltage =',v_int+v_frac/10,'V, Total events:',len(data))
+            peakint = calculate_integrals( data, sipm, parameters, npeaks, d_out )
+            np.save(f'{d_out}/peakint_SiPM{sipm}_{v_int}_{v_frac}_LED2p75_{date}.npy', peakint)
+            return
+
+    # NORMAL ANALYSIS
+    if args['file']:
+        datafile = args['file'][0]
+    else:
+        print('Data file not given')
+        return
+    d_out = f'{local_dir}/{date}'
     try: os.mkdir(d_out)
     except: pass
-
-    print('Calculate integrals for SiPM n.',sipm,', voltage from ',vstart,'to',vend,'V')
-    
-    #integrals = []
-    voltages = np.arange(vstart,vend,step)
-    for v in voltages:
-        v_int = int(v)
-        v_frac = int((v-v_int)*10)
-        peakint = calculate_integrals(sipm,date,v_int,v_frac,npeaks,d_out)
-        #integrals.append(peakint)
+    try: data = psu.read_file(f'{datafile}')
+    except:
+        print('File not valid')
+        return
+    print('Calculate integrals for ',datafile,'Total events:',len(data))
+    dataname = datafile.split('/')[-1].split('.')[0]
+    peakint = calculate_integrals( data, sipm, parameters, npeaks, d_out )
+    np.save(f'{d_out}/peakint_{dataname}.npy', peakint)
     return
-
-def calculate_integrals( sipm, date, v_int, v_frac, npeaks = 0, d_out = '.' ):
-    try: data = psu.read_file(f'/data/abalone/{date}/SiPM{sipm}_{v_int}_{v_frac}_LED2p75.dat')
-    except: return
+    
+    
+def calculate_integrals( data, sipm, par, npeaks = 0, d_out = '.' ):
     nn = len(data)
     peakint = np.zeros(nn)
-    print('SiPM',sipm,'Voltage =',v_int+v_frac/10,'V, Total events:',nn)
     t_start = time.time()
+    print('Fit parameters:',par)
     if npeaks == 0: npeaks = nn
     for i in range(npeaks):
         listpeaks = psu.search_peaks(data[i], 4, 2, False)
-        peakint[i] = psu.integral_central_peak(data[i],listpeaks,-5,1,10,100,5,8,10)
+        peakint[i] = psu.integral_central_peak(data[i],listpeaks,par[0],par[1],par[2],par[3],par[4],8,10)
         diff = time.time() - t_start
         if (i % 1000) == 0:
             print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')
-    np.save(f'{d_out}/peakint_SiPM{sipm}_{v_int}_{v_frac}_LED2p75_{date}.npy', peakint)
     print()
     return peakint
 

@@ -153,11 +153,11 @@ def search_peaks(wf, n, ampllim = 9, plot = False): # search all the peaks of th
     # n: nb of bin-size for the dled delay (dled = "discret derivative")
     # ampllim: min amplitude to select a peak
     L = []
-    t = np.arange(0,len(wf)*10,10)
+    t = np.arange(0,len(wf))
     dled = wf[:-n] - wf[n:] # derivative
     if plot:
-        plt.plot(t[:-n]/1000, wf[:-n] - wf[n:], label = 'dled signal')
-        plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
+        plt.plot(t[:-n], wf[:-n] - wf[n:], label = 'dled signal')
+        plt.xlabel(r'samples',ha='right',x=1)
         plt.ylabel('amplitude',ha='right',y=1)
         plt.legend()
     N = np.array([i for i in range(len(dled))]) # we will work in term of bin-size instead of time
@@ -174,6 +174,7 @@ def search_peaks(wf, n, ampllim = 9, plot = False): # search all the peaks of th
         L.append(n2)
         N, dled = N[N > n2], dled[N > n2]
         N1 = N[dled >= ampllim]
+        if plot: plt.plot( (n1+n2)/2, 0, "x")
     #L.append(len(wf)-1)
     return L
 
@@ -263,7 +264,7 @@ def integral_dled( wf, peaks_list, dtl = -2, dtr = 1,
     
 
 def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
-                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, plot=False):
+                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, central=True, plot=False):
     # tlim = time window of the fit integration
     # tfit = time window of the fit
     # tc = min time to consider 2 peaks independently
@@ -285,10 +286,14 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
         ttm = tt[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
         Amin = np.min(Am) #local min of the signal
         tmin = ttm[Am == Amin][0] #time of the min
-        if tmin-len(wf)/2 > 15 or tmin-len(wf)/2 < 0: continue #fit only central peak
+        if (central) and ((tmin-len(wf)/2 > 30) or (tmin-len(wf)/2 < -30)): continue #fit only central peak
         tl = tt[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         wfl = wf0[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         Il = -1*integ.simps(wfl, tl/100)
+        # calculation of real integral of the waveform
+        real_t = tt[(tt <= tmin+tlim) & (tt >= tmin+dtl)]
+        real_wf = wf0[(tt <= tmin+tlim) & (tt >= tmin+dtl)]
+        intreal = -1*integ.simps(real_wf, real_t/100)
         tr = tt[tmin+dtr:tmin+tfit] # time window for the fit
         amp = bl - Amin
         if len(tr) >= 5 and amp > 0:
@@ -298,7 +303,7 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
             fct_fit = expo2(bl) # fct used for the fit
             popt, pcov = curve_fit(fct_fit, tr2/100, wf0[tr],
                                     p0 = np.array([amp, 6.8]),
-                                    bounds =  ([amp/1.5, 6.7], [amp*1.5, 6.8]))
+                                    bounds =  ([amp/1.5, 1], [amp*1.5, 10]))
             a, b = popt
             tnew = tt[tr[0]:]
             if plot:
