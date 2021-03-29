@@ -107,5 +107,30 @@ def calculate_integrals( data, sipm, par, npeaks = 0, d_out = '.' ):
     print()
     return peakint
 
+
+from joblib import Parallel, delayed
+import multiprocessing
+num_cores = multiprocessing.cpu_count()
+
+
+def parrallel_integrals(wf,par)
+    listpeaks = psu.search_peaks(wf, 4, 2, False)
+    peakint = psu.integral_central_peak(wf,listpeaks,par[0],par[1],par[2],par[3],par[4],8,10)
+    
+    return peakint
+
+def calculate_integrals_par( data, sipm, par, npeaks = 0, d_out = '.' ):
+    nn = len(data)
+    peakint = np.zeros(nn)
+    t_start = time.time()
+    print('Fit parameters:',par)
+    if npeaks == 0: npeaks = nn
+    peakint = Parallel(n_jobs=num_cores)(delayed(parrallel_integrals)(data[i],par) for i in range(npeaks)  )
+    peakint = np.array(peakint)
+    
+    diff = time.time() - t_start
+    print(f' time to process: {diff:.2f}')
+    return peakint
+
 if __name__=="__main__":
     main()
