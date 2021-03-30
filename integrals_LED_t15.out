@@ -1,0 +1,6 @@
+/data/abalone/2021_03_26/SiPM2_t15_LED2p81.dat Number of events 144243.0
+Calculate integrals for  /data/abalone/2021_03_26/SiPM2_t15_LED2p81.dat Total events: 144243
+Use of parallelized loop
+Search parameters: [4, 2]
+Fit parameters: [ -8   1  10 100   5]
+Total time to process: 736.92
