@@ -104,12 +104,12 @@ def integral_simulation_peaks( wf, peaks_list, dtl = -2, dtr = 1,
         tmin = ttm[Am == amp][0]
         tl = tt[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         wfl = wf[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
-        Il = integ.simps(wfl, tl/100)
+        Il = integ.simps(wfl, tl)
         
         # calculation of real integral of the waveform
         real_t = tt[(tt <= tmin+tlim) & (tt >= tmin+dtl)]
         real_wf = wf[(tt <= tmin+tlim) & (tt >= tmin+dtl)]
-        intreal = integ.simps(real_wf, real_t/100)
+        intreal = integ.simps(real_wf, real_t)
         tr = tt[tmin+dtr:tmin+tfit] # time window for the fit
         if central: mask = (len(tr) >= 5 and amp > 5 and np.abs(tmin-len(wf)/2) < 50)
         else: mask = (len(tr) >= 5 and amp < 5 and np.abs(tmin-len(wf)/2) < 900)
@@ -118,33 +118,33 @@ def integral_simulation_peaks( wf, peaks_list, dtl = -2, dtr = 1,
             #print('tmin:',tmin,'bl:',bl,'amp max:',amp)
             #try:
             fct_fit = expo_pos(bl) # fct used for the fit
-            popt, pcov = curve_fit(fct_fit, tr2/100, wf[tr],
-                                    p0 = np.array([amp, 6.8]),
-                                    bounds =  ([amp/1.5, 1], [amp*1.5, 10]))
+            popt, pcov = curve_fit(fct_fit, tr2, wf[tr],
+                                    p0 = np.array([amp, 5/100]),
+                                    bounds =  ([amp/1.5, 1/100], [amp*1.5, 10/100]))
             a, b = popt
             tnew = tt[tr[0]:]
             if plot:
                 plt.figure(figsize=(8,4.5))
-                fct_fit_tot = fct_fit((tnew-tr[0])/100,a,b)
+                fct_fit_tot = fct_fit((tnew-tr[0]),a,b)
                 tnew2 = min(tlim, tt[-1]-tr[0])
                 tplot = tt[tmin+dtl-20:tmin+tnew2+20]
-                plt.plot(tplot/100,wf[tmin+dtl-20:tmin+tnew2+20],label='SiPM signal')
-                plt.plot(tnew[:tnew2]/100, fct_fit_tot[:tnew2],
+                plt.plot(tplot,wf[tmin+dtl-20:tmin+tnew2+20],label='SiPM signal')
+                plt.plot(tnew[:tnew2], fct_fit_tot[:tnew2],
                          label=f'fit f(x) = baseline - a*exp(-b*x):\n a = {a:.2f}, b = {b:.2f}')
                 plt.axhline(bl, color = 'r', label = 'baseline')
-                plt.vlines((tmin+dtl)/100, wf[tmin+dtl]-10, bl+10, colors = 'g',
+                plt.vlines((tmin+dtl), wf[tmin+dtl]-10, bl+10, colors = 'g',
                            label = 'integration limits')
-                plt.vlines((tmin+dtr)/100, wf[tmin+dtr]-10, bl+10, colors = 'g')
-                plt.vlines((tmin+tfit)/100, wf[tmin+tfit]-10, bl+10, colors = 'c',
+                plt.vlines((tmin+dtr), wf[tmin+dtr]-10, bl+10, colors = 'g')
+                plt.vlines((tmin+tfit), wf[tmin+tfit]-10, bl+10, colors = 'c',
                            label = 'fit limit')
-                plt.vlines((tmin+tlim)/100, wf[tmin+tlim]-10, bl+10, colors = 'g')
-                plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
-                plt.ylabel('amplitude',ha='right',y=1)
+                plt.vlines((tmin+tlim), wf[tmin+tlim]-10, bl+10, colors = 'g')
+                #plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
+                #plt.ylabel('amplitude',ha='right',y=1)
                 plt.legend()
                 tlimplot = tr[0]
             fct_int = lambda x : bl + fct_fit(x, a, b)
             #print('bl, a, b : ', bl, a, b)
-            Ir, err = integ.quad(fct_int, 0, (tlim-dtr)/100)
+            Ir, err = integ.quad(fct_int, 0, (tlim-dtr))
             inttot = Il + Ir
             integrals.append(inttot)
             #print(f'Amp: {amp:.2f} Integral: {Il:.3f} + {Ir:.3f} = {inttot:.3f}')

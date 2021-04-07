@@ -264,7 +264,7 @@ def integral_dled( wf, peaks_list, dtl = -2, dtr = 1,
     
 
 def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
-                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, central=True, plot=False):
+                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, plot=False):
     # tlim = time window of the fit integration
     # tfit = time window of the fit
     # tc = min time to consider 2 peaks independently
@@ -286,8 +286,7 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
         ttm = tt[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
         Amin = np.min(Am) #local min of the signal
         tmin = ttm[Am == Amin][0] #time of the min
-        if central and np.abs(tmin-len(wf)/2) > 50: continue #fit only central peak
-        if np.abs(tmin-len(wf)/2) > 400: continue
+        if np.abs(tmin-len(wf)/2) > 50: continue #fit only central peak
         tl = tt[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         wfl = wf0[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         Il = -1*integ.simps(wfl, tl/100)
@@ -332,6 +331,78 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
             #print(f'Integral: {Il:.1f} + {Ir:.1f} = {inttot:.2f}')
             tl = tt[tt >= peaks_list[2*i+1]+dtl]
     if inttot is not 0: return inttot
+
+
+def integral_peaks( wf, peaks_list, dtl = -2, dtr = 1,
+                  tfit = 20, tlim = 100, tc = 5, tll = 5, tlr = 10, plot=False):
+    # tlim = time window of the fit integration
+    # tfit = time window of the fit
+    # tc = min time to consider 2 peaks independently
+    # tll = left limit of the window to search baseline value
+    # tlr = right limit of the window to search Amin
+    inttot = 0
+    blmoy = wf.max()
+    wf0 = wf - blmoy
+    tt = np.array([i for i in range(len(wf))]) # time in bin-size
+    tplot_tot = []
+    A_tot = []
+    integrals = []
+    if plot:
+        plt.figure(figsize=(8,4.5))
+    for i in range(len(peaks_list)//2):
+        dt = peaks_list[2*i + 1] - peaks_list[2*i]
+        if dt < tc: continue #skip peaks if is too close to next one
+        tlo = peaks_list[2*i]-tll
+        if tlo < 0: tlo = 0
+        bl = np.max(wf0[tlo:peaks_list[2*i]+1])
+        Am = wf0[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
+        ttm = tt[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
+        Amin = np.min(Am) #local min of the signal
+        tmin = ttm[Am == Amin][0] #time of the min
+        if np.abs(tmin-len(wf)/2) > 400: continue #remove border events
+        tl = tt[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
+        wfl = wf0[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
+        Il = -1*integ.simps(wfl, tl/100)
+        # calculation of real integral of the waveform
+        real_t = tt[(tt <= tmin+tlim) & (tt >= tmin+dtl)]
+        real_wf = wf0[(tt <= tmin+tlim) & (tt >= tmin+dtl)]
+        intreal = -1*integ.simps(real_wf, real_t/100)
+        tr = tt[tmin+dtr:tmin+tfit] # time window for the fit
+        amp = bl - Amin
+        if len(tr) >= 5 and amp > 0:
+            tr2 = tr - tr[0]
+            #print('tmin:',tmin,'bl:',bl,'amp max:',amp)
+            #try:
+            fct_fit = expo2(bl) # fct used for the fit
+            popt, pcov = curve_fit(fct_fit, tr2/100, wf0[tr],
+                                    p0 = np.array([amp, 6.8]),
+                                    bounds =  ([amp/1.5, 1], [amp*1.5, 10]))
+            a, b = popt
+            tnew = tt[tr[0]:]
+            fct_int = lambda x : bl - fct_fit(x, a, b)
+            #print('bl, a, b : ', bl, a, b)
+            Ir, err = integ.quad(fct_int, 0, (tlim-dtr)/100)
+            inttot = Il + Ir
+            integrals.append(inttot)
+            #print(f'Integral: {Il:.1f} + {Ir:.1f} = {inttot:.2f}')
+            tl = tt[tt >= peaks_list[2*i+1]+dtl]
+            if plot:
+                #plt.figure(figsize=(8,4.5))
+                fct_fit_tot = fct_fit((tnew-tr[0])/100,a,b)
+                tnew2 = min(tlim, tt[-1]-tr[0])
+                tplot = tt[tmin+dtl-20:tmin+tnew2+20]
+                plt.plot(tplot/100,wf0[tmin+dtl-20:tmin+tnew2+20],label=f'signal {i}: A={inttot:.2f}')
+                plt.plot(tnew[:tnew2]/100, fct_fit_tot[:tnew2])#,label=f'fit f(x) = baseline - a*exp(-b*x):\n a = {a:.2f}, b = {b:.2f}')
+                plt.axhline(bl, color = 'r')#, label = 'baseline')
+                plt.vlines((tmin+dtl)/100, wf0[tmin+dtl]-10, bl+10, colors = 'g')#,label = 'integration limits')
+                plt.vlines((tmin+dtr)/100, wf0[tmin+dtr]-10, bl+10, colors = 'g')
+                plt.vlines((tmin+tfit)/100, wf0[tmin+tfit]-10, bl+10, colors = 'c')#,label = 'fit limit')
+                plt.vlines((tmin+tlim)/100, wf0[tmin+tlim]-10, bl+10, colors = 'g')
+                plt.xlabel(r'time ($\mu s$)',ha='right',x=1)
+                plt.ylabel('amplitude',ha='right',y=1)
+                plt.legend()
+                tlimplot = tr[0]
+    return integrals
 
 
 def spectrum_fit(peaks_integral,nsipm,volt,a=0,b=40,bins=1000,hlim=300,firstpe=1,lastpe=12, plot=False):
