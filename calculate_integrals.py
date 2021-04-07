@@ -115,12 +115,19 @@ def calculate_integrals( data, sipm, spar, par, npeaks = 0, d_out = '.' ):
     if npeaks == 0: npeaks = nn
     for i in range(npeaks):
         listpeaks = psu.search_peaks(data[i], spar[0], spar[1], False)
+<<<<<<< HEAD
         integrals = psu.integral_peaks(data[i],listpeaks,par[0],par[1],par[2],par[3],par[4],8,10)
         peakint.append(integrals)
         diff = time.time() - t_start
         if (i % 1000) == 0:
             print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')
     peakint = np.concatenate(peakint)
+=======
+        peakint[i] = psu.integral_central_peak(data[i],listpeaks,par[0],par[1],par[2],par[3],par[4],8,10,central=False)
+        diff = time.time() - t_start
+        if (i % 1000) == 0:
+            print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')
+>>>>>>> d33b2492e8f322d39efe85dd6e87459cde7a8098
     print(f'total time to process: {diff:.2f}')
     print()
     return peakint
@@ -128,7 +135,11 @@ def calculate_integrals( data, sipm, spar, par, npeaks = 0, d_out = '.' ):
 
 def parrallel_integrals(wf,spar,par):
     listpeaks = psu.search_peaks(wf, spar[0], spar[1], False)
+<<<<<<< HEAD
     peakint = psu.integral_peaks(wf,listpeaks,par[0],par[1],par[2],par[3],par[4],8,10)
+=======
+    peakint = psu.integral_central_peak(wf,listpeaks,par[0],par[1],par[2],par[3],par[4],8,10,central=False)
+>>>>>>> d33b2492e8f322d39efe85dd6e87459cde7a8098
     return peakint
 
 def calculate_integrals_par( data, sipm, spar, par, npeaks = 0, d_out = '.' ):
