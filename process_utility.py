@@ -286,12 +286,7 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
         ttm = tt[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
         Amin = np.min(Am) #local min of the signal
         tmin = ttm[Am == Amin][0] #time of the min
-<<<<<<< HEAD
         if np.abs(tmin-len(wf)/2) > 50: continue #fit only central peak
-=======
-        if central and np.abs(tmin-len(wf)/2) > 50: continue #fit only central peak
-        if np.abs(tmin-len(wf)/2) > 400: continue
->>>>>>> d33b2492e8f322d39efe85dd6e87459cde7a8098
         tl = tt[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         wfl = wf0[(tt <= tmin+dtr) & (tt >= tmin+dtl)]
         Il = -1*integ.simps(wfl, tl/100)
