@@ -11,6 +11,13 @@ import time
 import json
 import os
 
+import math
+from IPython.display import display, clear_output
+import scipy.optimize as spo
+import iminuit
+import uproot
+
+
 def read_waveforms_from_json( PE = 1, angle = 0, plot = False ):
     wfs = []
     path = '/home/dandrea/abalone_simulation/results/SiPM'

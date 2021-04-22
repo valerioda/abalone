@@ -1,0 +1,2113 @@
+Track and readout analysis with 1 PE and 0 angle
+Initializing 1 pe, at angle 0
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_2.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_3.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_4.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_5.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_6.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_7.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_8.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_9.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_10.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_11.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_12.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_13.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_14.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_15.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_16.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_17.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_18.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_19.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_20.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_21.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_22.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_23.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_24.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_25.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_26.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_27.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_28.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_29.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_30.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_31.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_32.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_33.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_34.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_35.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_36.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_37.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_38.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_39.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_40.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_41.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_42.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_43.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_44.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_45.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_46.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_47.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_48.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_49.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_50.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_51.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_52.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_53.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_54.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_55.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_56.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_57.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_58.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_59.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_60.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_61.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_62.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_63.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_64.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_65.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_66.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_67.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_68.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_69.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_70.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_71.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_72.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_73.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_74.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_75.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_76.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_77.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_78.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_79.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_80.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_81.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_82.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_83.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_84.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_85.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_86.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_87.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_88.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_89.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_90.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_91.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_92.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_93.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_94.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_95.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_96.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_97.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_98.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_99.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_100.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_101.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_102.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_103.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_104.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_105.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_106.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_107.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_108.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_109.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_110.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_111.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_112.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_113.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_114.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_115.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_116.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_117.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_118.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_119.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_120.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_121.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_122.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_123.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_124.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_125.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_126.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_127.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_128.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_129.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_130.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_131.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_132.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_133.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_134.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_135.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_136.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_137.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_138.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_139.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_140.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_141.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_142.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_143.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_144.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_145.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_146.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_147.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_148.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_149.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_150.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_151.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_152.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_153.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_154.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_155.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_156.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_157.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_158.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_159.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_160.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_161.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_162.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_163.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_164.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_165.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_166.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_167.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_168.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_169.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_170.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_171.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_172.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_173.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_174.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_175.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_176.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_177.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_178.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_179.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_180.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_181.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_182.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_183.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_184.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_185.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_186.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_187.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_188.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_189.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_190.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_191.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_192.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_193.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_194.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_195.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_196.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_197.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_198.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_199.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_200.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_201.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_202.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_203.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_204.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_205.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_206.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_207.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_208.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_209.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_210.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_211.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_212.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_213.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_214.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_215.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_216.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_217.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_218.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_219.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_220.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_221.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_222.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_223.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_224.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_225.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_226.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_227.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_228.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_229.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_230.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_231.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_232.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_233.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_234.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_235.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_236.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_237.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_238.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_239.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_240.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_241.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_242.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_243.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_244.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_245.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_246.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_247.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_248.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_249.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_250.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_251.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_252.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_253.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_254.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_255.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_256.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_257.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_258.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_259.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_260.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_261.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_262.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_263.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_264.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_265.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_266.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_267.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_268.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_269.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_270.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_271.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_272.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_273.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_274.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_275.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_276.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_277.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_278.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_279.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_280.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_281.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_282.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_283.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_284.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_285.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_286.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_287.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_288.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_289.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_290.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_291.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_292.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_293.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_294.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_295.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_296.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_297.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_298.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_299.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_300.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_301.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_302.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_303.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_304.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_305.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_306.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_307.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_308.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_309.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_310.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_311.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_312.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_313.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_314.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_315.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_316.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_317.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_318.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_319.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_320.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_321.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_322.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_323.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_324.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_325.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_326.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_327.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_328.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_329.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_330.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_331.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_332.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_333.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_334.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_335.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_336.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_337.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_338.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_339.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_340.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_341.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_342.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_343.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_344.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_345.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_346.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_347.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_348.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_349.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_350.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_351.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_352.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_353.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_354.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_355.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_356.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_357.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_358.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_359.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_360.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_361.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_362.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_363.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_364.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_365.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_366.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_367.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_368.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_369.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_370.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_371.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_372.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_373.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_374.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_375.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_376.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_377.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_378.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_379.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_380.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_381.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_382.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_383.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_384.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_385.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_386.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_387.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_388.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_389.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_390.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_391.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_392.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_393.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_394.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_395.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_396.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_397.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_398.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_399.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_400.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_401.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_402.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_403.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_404.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_405.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_406.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_407.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_408.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_409.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_410.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_411.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_412.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_413.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_414.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_415.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_416.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_417.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_418.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_419.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_420.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_421.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_422.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_423.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_424.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_425.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_426.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_427.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_428.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_429.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_430.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_431.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_432.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_433.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_434.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_435.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_436.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_437.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_438.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_439.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_440.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_441.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_442.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_443.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_444.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_445.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_446.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_447.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_448.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_449.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_450.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_451.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_452.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_453.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_454.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_455.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_456.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_457.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_458.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_459.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_460.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_461.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_462.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_463.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_464.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_465.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_466.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_467.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_468.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_469.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_470.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_471.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_472.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_473.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_474.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_475.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_476.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_477.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_478.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_479.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_480.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_481.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_482.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_483.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_484.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_485.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_486.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_487.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_488.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_489.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_490.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_491.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_492.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_493.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_494.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_495.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_496.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_497.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_498.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_499.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_500.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_501.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_502.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_503.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_504.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_505.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_506.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_507.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_508.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_509.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_510.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_511.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_512.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_513.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_514.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_515.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_516.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_517.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_518.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_519.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_520.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_521.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_522.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_523.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_524.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_525.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_526.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_527.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_528.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_529.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_530.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_531.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_532.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_533.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_534.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_535.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_536.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_537.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_538.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_539.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_540.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_541.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_542.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_543.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_544.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_545.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_546.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_547.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_548.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_549.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_550.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_551.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_552.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_553.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_554.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_555.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_556.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_557.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_558.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_559.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_560.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_561.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_562.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_563.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_564.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_565.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_566.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_567.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_568.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_569.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_570.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_571.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_572.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_573.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_574.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_575.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_576.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_577.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_578.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_579.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_580.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_581.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_582.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_583.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_584.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_585.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_586.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_587.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_588.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_589.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_590.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_591.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_592.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_593.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_594.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_595.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_596.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_597.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_598.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_599.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_600.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_601.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_602.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_603.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_604.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_605.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_606.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_607.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_608.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_609.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_610.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_611.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_612.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_613.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_614.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_615.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_616.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_617.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_618.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_619.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_620.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_621.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_622.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_623.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_624.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_625.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_626.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_627.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_628.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_629.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_630.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_631.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_632.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_633.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_634.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_635.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_636.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_637.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_638.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_639.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_640.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_641.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_642.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_643.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_644.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_645.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_646.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_647.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_648.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_649.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_650.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_651.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_652.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_653.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_654.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_655.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_656.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_657.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_658.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_659.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_660.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_661.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_662.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_663.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_664.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_665.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_666.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_667.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_668.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_669.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_670.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_671.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_672.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_673.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_674.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_675.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_676.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_677.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_678.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_679.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_680.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_681.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_682.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_683.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_684.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_685.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_686.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_687.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_688.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_689.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_690.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_691.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_692.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_693.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_694.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_695.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_696.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_697.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_698.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_699.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_700.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_701.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_702.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_703.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_704.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_705.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_706.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_707.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_708.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_709.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_710.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_711.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_712.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_713.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_714.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_715.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_716.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_717.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_718.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_719.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_720.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_721.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_722.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_723.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_724.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_725.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_726.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_727.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_728.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_729.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_730.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_731.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_732.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_733.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_734.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_735.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_736.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_737.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_738.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_739.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_740.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_741.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_742.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_743.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_744.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_745.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_746.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_747.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_748.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_749.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_750.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_751.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_752.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_753.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_754.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_755.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_756.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_757.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_758.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_759.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_760.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_761.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_762.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_763.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_764.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_765.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_766.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_767.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_768.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_769.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_770.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_771.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_772.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_773.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_774.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_775.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_776.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_777.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_778.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_779.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_780.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_781.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_782.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_783.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_784.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_785.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_786.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_787.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_788.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_789.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_790.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_791.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_792.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_793.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_794.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_795.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_796.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_797.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_798.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_799.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_800.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_801.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_802.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_803.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_804.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_805.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_806.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_807.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_808.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_809.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_810.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_811.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_812.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_813.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_814.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_815.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_816.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_817.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_818.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_819.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_820.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_821.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_822.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_823.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_824.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_825.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_826.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_827.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_828.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_829.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_830.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_831.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_832.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_833.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_834.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_835.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_836.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_837.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_838.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_839.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_840.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_841.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_842.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_843.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_844.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_845.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_846.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_847.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_848.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_849.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_850.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_851.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_852.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_853.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_854.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_855.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_856.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_857.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_858.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_859.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_860.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_861.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_862.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_863.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_864.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_865.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_866.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_867.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_868.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_869.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_870.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_871.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_872.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_873.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_874.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_875.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_876.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_877.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_878.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_879.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_880.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_881.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_882.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_883.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_884.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_885.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_886.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_887.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_888.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_889.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_890.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_891.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_892.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_893.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_894.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_895.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_896.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_897.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_898.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_899.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_900.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_901.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_902.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_903.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_904.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_905.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_906.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_907.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_908.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_909.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_910.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_911.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_912.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_913.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_914.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_915.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_916.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_917.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_918.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_919.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_920.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_921.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_922.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_923.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_924.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_925.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_926.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_927.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_928.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_929.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_930.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_931.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_932.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_933.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_934.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_935.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_936.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_937.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_938.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_939.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_940.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_941.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_942.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_943.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_944.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_945.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_946.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_947.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_948.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_949.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_950.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_951.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_952.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_953.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_954.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_955.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_956.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_957.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_958.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_959.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_960.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_961.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_962.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_963.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_964.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_965.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_966.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_967.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_968.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_969.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_970.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_971.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_972.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_973.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_974.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_975.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_976.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_977.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_978.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_979.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_980.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_981.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_982.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_983.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_984.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_985.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_986.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_987.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_988.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_989.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_990.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_991.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_992.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_993.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_994.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_995.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_996.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_997.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_998.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_999.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1000.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1001.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1002.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1003.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1004.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1005.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1006.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1007.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1008.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1009.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1010.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1011.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1012.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1013.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1014.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1015.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1016.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1017.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1018.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1019.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1020.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1021.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1022.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1023.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1024.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1025.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1026.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1027.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1028.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1029.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1030.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1031.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1032.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1033.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1034.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1035.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1036.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1037.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1038.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1039.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1040.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1041.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1042.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1043.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1044.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1045.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1046.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1047.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1048.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1049.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1050.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1051.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1052.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1053.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1054.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1055.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1056.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1057.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1058.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1059.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1060.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1061.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1062.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1063.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1064.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1065.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1066.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1067.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1068.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1069.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1070.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1071.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1072.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1073.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1074.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1075.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1076.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1077.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1078.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1079.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1080.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1081.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1082.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1083.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1084.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1085.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1086.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1087.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1088.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1089.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1090.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1091.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1092.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1093.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1094.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1095.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1096.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1097.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1098.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1099.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1100.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1101.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1102.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1103.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1104.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1105.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1106.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1107.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1108.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1109.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1110.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1111.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1112.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1113.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1114.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1115.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1116.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1117.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1118.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1119.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1120.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1121.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1122.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1123.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1124.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1125.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1126.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1127.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1128.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1129.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1130.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1131.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1132.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1133.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1134.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1135.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1136.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1137.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1138.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1139.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1140.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1141.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1142.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1143.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1144.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1145.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1146.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1147.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1148.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1149.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1150.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1151.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1152.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1153.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1154.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1155.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1156.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1157.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1158.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1159.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1160.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1161.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1162.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1163.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1164.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1165.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1166.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1167.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1168.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1169.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1170.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1171.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1172.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1173.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1174.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1175.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1176.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1177.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1178.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1179.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1180.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1181.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1182.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1183.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1184.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1185.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1186.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1187.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1188.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1189.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1190.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1191.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1192.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1193.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1194.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1195.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1196.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1197.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1198.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1199.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1200.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1201.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1202.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1203.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1204.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1205.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1206.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1207.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1208.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1209.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1210.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1211.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1212.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1213.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1214.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1215.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1216.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1217.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1218.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1219.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1220.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1221.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1222.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1223.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1224.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1225.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1226.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1227.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1228.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1229.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1230.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1231.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1232.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1233.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1234.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1235.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1236.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1237.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1238.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1239.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1240.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1241.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1242.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1243.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1244.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1245.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1246.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1247.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1248.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1249.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1250.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1251.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1252.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1253.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1254.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1255.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1256.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1257.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1258.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1259.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1260.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1261.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1262.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1263.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1264.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1265.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1266.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1267.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1268.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1269.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1270.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1271.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1272.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1273.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1274.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1275.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1276.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1277.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1278.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1279.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1280.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1281.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1282.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1283.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1284.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1285.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1286.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1287.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1288.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1289.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1290.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1291.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1292.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1293.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1294.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1295.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1296.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1297.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1298.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1299.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1300.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1301.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1302.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1303.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1304.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1305.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1306.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1307.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1308.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1309.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1310.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1311.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1312.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1313.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1314.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1315.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1316.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1317.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1318.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1319.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1320.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1321.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1322.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1323.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1324.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1325.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1326.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1327.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1328.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1329.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1330.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1331.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1332.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1333.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1334.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1335.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1336.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1337.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1338.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1339.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1340.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1341.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1342.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1343.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1344.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1345.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1346.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1347.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1348.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1349.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1350.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1351.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1352.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1353.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1354.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1355.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1356.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1357.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1358.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1359.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1360.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1361.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1362.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1363.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1364.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1365.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1366.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1367.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1368.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1369.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1370.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1371.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1372.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1373.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1374.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1375.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1376.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1377.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1378.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1379.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1380.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1381.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1382.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1383.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1384.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1385.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1386.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1387.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1388.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1389.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1390.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1391.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1392.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1393.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1394.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1395.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1396.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1397.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1398.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1399.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1400.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1401.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1402.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1403.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1404.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1405.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1406.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1407.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1408.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1409.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1410.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1411.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1412.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1413.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1414.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1415.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1416.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1417.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1418.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1419.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1420.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1421.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1422.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1423.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1424.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1425.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1426.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1427.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1428.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1429.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1430.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1431.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1432.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1433.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1434.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1435.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1436.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1437.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1438.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1439.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1440.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1441.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1442.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1443.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1444.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1445.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1446.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1447.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1448.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1449.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1450.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1451.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1452.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1453.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1454.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1455.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1456.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1457.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1458.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1459.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1460.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1461.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1462.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1463.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1464.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1465.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1466.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1467.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1468.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1469.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1470.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1471.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1472.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1473.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1474.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1475.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1476.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1477.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1478.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1479.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1480.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1481.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1482.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1483.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1484.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1485.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1486.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1487.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1488.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1489.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1490.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1491.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1492.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1493.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1494.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1495.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1496.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1497.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1498.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1499.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1500.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1501.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1502.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1503.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1504.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1505.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1506.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1507.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1508.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1509.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1510.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1511.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1512.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1513.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1514.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1515.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1516.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1517.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1518.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1519.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1520.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1521.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1522.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1523.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1524.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1525.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1526.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1527.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1528.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1529.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1530.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1531.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1532.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1533.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1534.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1535.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1536.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1537.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1538.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1539.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1540.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1541.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1542.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1543.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1544.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1545.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1546.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1547.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1548.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1549.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1550.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1551.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1552.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1553.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1554.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1555.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1556.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1557.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1558.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1559.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1560.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1561.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1562.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1563.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1564.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1565.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1566.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1567.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1568.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1569.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1570.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1571.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1572.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1573.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1574.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1575.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1576.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1577.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1578.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1579.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1580.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1581.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1582.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1583.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1584.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1585.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1586.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1587.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1588.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1589.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1590.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1591.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1592.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1593.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1594.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1595.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1596.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1597.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1598.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1599.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1600.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1601.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1602.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1603.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1604.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1605.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1606.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1607.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1608.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1609.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1610.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1611.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1612.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1613.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1614.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1615.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1616.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1617.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1618.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1619.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1620.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1621.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1622.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1623.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1624.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1625.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1626.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1627.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1628.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1629.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1630.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1631.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1632.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1633.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1634.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1635.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1636.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1637.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1638.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1639.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1640.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1641.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1642.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1643.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1644.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1645.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1646.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1647.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1648.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1649.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1650.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1651.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1652.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1653.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1654.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1655.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1656.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1657.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1658.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1659.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1660.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1661.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1662.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1663.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1664.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1665.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1666.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1667.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1668.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1669.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1670.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1671.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1672.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1673.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1674.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1675.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1676.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1677.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1678.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1679.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1680.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1681.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1682.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1683.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1684.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1685.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1686.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1687.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1688.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1689.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1690.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1691.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1692.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1693.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1694.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1695.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1696.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1697.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1698.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1699.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1700.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1701.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1702.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1703.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1704.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1705.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1706.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1707.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1708.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1709.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1710.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1711.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1712.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1713.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1714.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1715.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1716.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1717.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1718.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1719.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1720.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1721.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1722.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1723.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1724.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1725.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1726.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1727.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1728.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1729.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1730.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1731.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1732.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1733.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1734.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1735.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1736.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1737.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1738.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1739.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1740.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1741.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1742.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1743.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1744.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1745.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1746.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1747.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1748.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1749.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1750.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1751.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1752.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1753.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1754.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1755.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1756.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1757.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1758.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1759.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1760.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1761.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1762.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1763.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1764.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1765.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1766.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1767.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1768.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1769.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1770.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1771.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1772.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1773.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1774.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1775.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1776.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1777.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1778.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1779.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1780.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1781.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1782.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1783.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1784.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1785.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1786.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1787.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1788.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1789.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1790.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1791.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1792.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1793.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1794.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1795.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1796.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1797.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1798.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1799.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1800.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1801.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1802.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1803.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1804.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1805.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1806.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1807.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1808.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1809.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1810.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1811.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1812.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1813.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1814.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1815.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1816.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1817.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1818.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1819.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1820.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1821.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1822.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1823.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1824.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1825.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1826.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1827.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1828.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1829.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1830.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1831.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1832.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1833.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1834.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1835.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1836.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1837.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1838.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1839.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1840.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1841.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1842.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1843.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1844.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1845.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1846.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1847.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1848.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1849.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1850.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1851.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1852.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1853.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1854.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1855.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1856.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1857.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1858.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1859.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1860.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1861.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1862.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1863.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1864.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1865.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1866.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1867.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1868.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1869.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1870.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1871.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1872.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1873.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1874.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1875.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1876.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1877.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1878.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1879.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1880.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1881.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1882.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1883.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1884.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1885.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1886.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1887.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1888.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1889.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1890.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1891.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1892.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1893.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1894.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1895.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1896.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1897.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1898.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1899.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1900.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1901.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1902.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1903.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1904.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1905.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1906.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1907.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1908.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1909.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1910.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1911.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1912.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1913.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1914.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1915.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1916.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1917.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1918.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1919.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1920.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1921.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1922.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1923.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1924.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1925.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1926.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1927.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1928.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1929.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1930.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1931.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1932.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1933.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1934.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1935.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1936.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1937.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1938.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1939.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1940.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1941.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1942.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1943.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1944.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1945.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1946.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1947.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1948.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1949.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1950.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1951.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1952.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1953.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1954.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1955.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1956.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1957.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1958.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1959.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1960.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1961.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1962.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1963.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1964.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1965.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1966.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1967.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1968.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1969.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1970.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1971.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1972.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1973.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1974.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1975.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1976.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1977.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1978.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1979.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1980.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1981.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1982.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1983.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1984.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1985.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1986.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1987.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1988.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1989.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1990.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1991.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1992.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1993.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1994.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1995.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1996.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1997.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1998.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/SiPM/SiPM_readout_1_0_run_1999.txt
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_1.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_2.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_3.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_4.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_5.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_6.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_7.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_8.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_9.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_10.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_11.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_12.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_13.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_14.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_15.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_16.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_17.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_18.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_19.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_20.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_21.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_22.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_23.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_24.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_25.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_26.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_27.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_28.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_29.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_30.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_31.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_32.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_33.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_34.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_35.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_36.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_37.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_38.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_39.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_40.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_41.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_42.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_43.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_44.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_45.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_46.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_47.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_48.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_49.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_50.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_51.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_52.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_53.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_54.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_55.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_56.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_57.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_58.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_59.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_60.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_61.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_62.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_63.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_64.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_65.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_66.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_67.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_68.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_69.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_70.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_71.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_72.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_73.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_74.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_75.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_76.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_77.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_78.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_79.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_80.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_81.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_82.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_83.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_84.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_85.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_86.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_87.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_88.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_89.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_90.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_91.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_92.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_93.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_94.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_95.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_96.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_97.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_98.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_99.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_100.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_101.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_102.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_103.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_104.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_105.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_106.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_107.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_108.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_109.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_110.root
+[2K[2Kreading /home/pieramico/AIUTO/provo/tracking/1_0_track_111.root
+[2K
