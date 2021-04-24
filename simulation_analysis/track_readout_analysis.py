@@ -4,7 +4,7 @@ import math
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
-from IPython.display import display, clear_output
+#from IPython.display import display, clear_output
 import scipy.optimize as spo
 import iminuit
 import uproot
@@ -32,22 +32,22 @@ def main():
     else: fn = 2000
     
     print('Track and readout analysis with',PE,'PE and',angle,'angle')
-    file_number_range = range(1,fn)
+    file_number_range = range(1,fn+1)
     main_path = '/home/pieramico/AIUTO/provo/'
     save_path = './'
-    #/home/dandrea/abalone_simulation/results/nrbe/'
-    pe1_ang0 = track_and_readout(PE,angle,file_number_range,main_path)
-    plot_spectra(pe1_ang0,save_path)
+    pe1_ang0 = track_and_readout(PE,angle,file_number_range,main_path,save_path)
+    #plot_spectra(pe1_ang0,save_path)
     return
 
 
 class track_and_readout:
     
-    def __init__(self, pe, angle,file_number_range,main_path):
+    def __init__(self, pe, angle,file_number_range,main_path,save_path):
         self.angle = angle
         self.pe = pe
         self.file_number_range = file_number_range
         self.main_path = main_path
+        self.save_path = save_path
         print("Initializing",self.pe,"pe, at angle",self.angle)
         
         self.area_collection = self.load_readout_data(self)
@@ -58,7 +58,6 @@ class track_and_readout:
         collection = []
         
         for num in self.file_number_range:
-            clear_output(wait=True)
             path = self.main_path + "SiPM/"
             file_name = path + "SiPM_readout_" + str(self.pe) + "_" + str(self.angle) + "_run_" + str(num) +".txt"
             print("reading " + file_name)
@@ -74,17 +73,29 @@ class track_and_readout:
                         #for i in range(len(data_column)):
                         collection.append(np.trapz(data_column))
                     except: pass
-                        
+        filename = (f'_{self.pe}PE_{self.angle}angle')
+        path = self.save_path + "electron_counts/"
+        np.save(path+'electron_count_area'+filename+'.npy',collection)
         return collection
-
+    
     def load_track_data(self,arg):
         all_loaded_data = pd.DataFrame(columns=["Event_ID","Parent_ID","Track_ID","Particle","X","Y","Z","Time","KE","DE","Volume"])
         total_len = 0
+        ID = []
+        Event = []
+        Parent = []
+        Track = []
+        Particle = []
+        X = []
+        Y = []
+        Z = []
+        Time = []
+        KE = []
+        DE = []
+        Volume = []
+        df1 = pd.DataFrame(columns=["ID","Event_ID","Parent_ID","Track_ID","Particle","X","Y","Z","Time","KE","DE","Volume"])
         
         for num in self.file_number_range:
-            
-            clear_output(wait=True)
-            
             path = self.main_path + "tracking/"
             file_name = path + str(self.pe)+"_" + str(self.angle)+"_track_" + str(num) + ".root"
             
@@ -104,14 +115,43 @@ class track_and_readout:
             df["KE"] = tree.array("KE")
             df["DE"] = tree.array("DE")
             df["Volume"] = (tree.array("Volume")).astype(int)
-
             df.loc[df["Particle"] == 0 , "Particle"] = "e-"
             df.loc[df["Particle"] == 1 , "Particle"] = "photon"
-
             frames = [all_loaded_data,df]
             all_loaded_data = pd.concat(frames)
             total_len += len(set(df["Event_ID"].values))
-
+            """
+            print(list(set(df["Event_ID"].values)))
+            ID = np.append(ID,list(set(df["Event_ID"].values)))
+            Event = np.append(Event,(tree.array("Event_ID")).astype(int)+int(total_len))
+            Parent = np.append(Parent,(tree.array("Parent_ID")).astype(int))
+            Track = np.append(Track,(tree.array("Track_ID")).astype(int))
+            Particle = np.append(Particle,tree.array("Particle"))
+            X = np.append(X,tree.array("X"))
+            Y = np.append(Y,tree.array("Y"))
+            Z = np.append(Z,tree.array("Z"))
+            Time = np.append(Time,tree.array("Time"))
+            KE = np.append(KE,tree.array("KE"))
+            DE = np.append(DE,tree.array("DE"))
+            Volume = np.append(Volume,(tree.array("Volume")).astype(int))
+            
+        df1["ID"] = ID
+        df1["Event_ID"] = Event
+        df1["Parent_ID"] = Parent
+        df1["Track_ID"] = Track
+        df1["Particle"] = Particle
+        df1["X"] = X
+        df1["Y"] = Y
+        df1["Z"] = Z
+        df1["Time"] = Time
+        df1["KE"] = KE    
+        df1["DE"] = DE
+        df1["Volume"] = Volume
+        df1.loc[df1["Particle"] == 0 , "Particle"] = "e-"
+        df1.loc[df1["Particle"] == 1 , "Particle"] = "photon"
+        print('OLD DATAFRAME\n',all_loaded_data)
+        print('NEW DATAFRAME\n',df1)
+        """
         all_loaded_data["Event_ID"] = pd.to_numeric(all_loaded_data["Event_ID"], downcast='signed')
         return all_loaded_data,total_len
     
@@ -135,46 +175,57 @@ class track_and_readout:
         returning_electron_event=[]
         straight_event = []
         never_event=[]
-                
-        #display(len(non_returning_array)+len(good_electron_array)+len(never_array))
+        
         sc_vol = 15
+        electron_select = (self.track_data['Parent_ID']==0)
+        
+        #non_ev = []
+        #mask_non = (sc_vol in temp['Volume'].values) & (temp['Volume'].values[-1] != sc_vol)
+        #non_ev.append(temp['Event_ID'][electrons_ID & mask_non])
+        #print('new list of non-returning',non_ev)
+        
         for i in range(0,int(max(self.track_data["Event_ID"])+1)):
             event_select = self.track_data['Event_ID'] == i
-            electron_select = self.track_data['Parent_ID']==0
             scintillator = self.track_data['Volume'] == sc_vol
             temp = self.track_data[event_select & electron_select]
-
             for j in range (int(min(temp["Track_ID"])),int(max(temp["Track_ID"])+1)):
-                electrons_ID = self.track_data['Track_ID']==j # the data frame for each electron in each event
-                each_df = self.track_data[event_select & electron_select & electrons_ID]
-                Edep_df = self.track_data[event_select & electron_select & scintillator & electrons_ID]
+                #electrons_ID = self.track_data['Track_ID']==j
+                #each_df = self.track_data[event_select & electron_select & electrons_ID]
+                #Edep_df = self.track_data[event_select & electron_select & scintillator & electrons_ID]
+                electrons_ID = temp['Track_ID']==j
+                
+                each_df = temp[(electrons_ID)]
+                Edep_df = temp[(electrons_ID)&(temp['Volume']==sc_vol)]
 
                 energy = Edep_df["DE"].sum()
-                
                 if sc_vol in each_df['Volume'].values and (each_df['Volume'].values)[-1] != sc_vol: #non-returning
                     non_returning += 1
                     non_returning_array.append(energy)
                     non_returning_event.append(i)
-                    
                 
-                flag = 0  # A flag for determining whether it is straight e- or Returning e-
-                
-                if sc_vol in each_df['Volume'].values and (each_df['Volume'].values)[-1] == sc_vol: #contains returning and straight electron!
+                flag = 0
+                #contains returning and straight electron!
+                if sc_vol in each_df['Volume'].values and (each_df['Volume'].values)[-1] == sc_vol:
                     vol_array = each_df['Volume'].values
-                    for k in range(len(vol_array)-1):
-                        if vol_array[k] == sc_vol and vol_array[k+1]!=sc_vol:
-                            flag=1
+                    # find the flag (1 for straight, 0 for returning)
+                    idx = np.array(np.where(vol_array==sc_vol)[0])
+                    maxi, mini = np.max(idx), np.min(idx)
+                    if np.sum(idx) == (len(idx)/2)*(mini + maxi): flag = 0
+                    else: flag = 1
+                    
+                    #for k in range(len(vol_array)-1):
+                    #    if vol_array[k] == sc_vol and vol_array[k+1]!=sc_vol:
+                    #        flag=1
                     
                     if flag == 0:
                         straight_electron += 1
                         straight_electron_array.append(energy)
                         straight_event.append(i)
-
                     else:
                         returning_electron += 1
                         returning_electron_array.append(energy)
                         returning_electron_event.append(i)
-                    
+                        
                 if not sc_vol in each_df['Volume'].values:
                     never_electron +=1
                     never_array.append(energy)
@@ -184,14 +235,24 @@ class track_and_readout:
         non_returning_event=list(set(non_returning_event))
         returning_electron_event=list(set(returning_electron_event))
         never_event=list(set(never_event))
+        
+        #print('old list of non-returning',non_returning_event)
         print(f'time to count electrons {time.time() - t_start:.2f}')
         print('straight event', len(straight_event))
         print('non returning event', len(non_returning_event))
         print('returning electron event', len(returning_electron_event))
         print('never event', len(never_event))
-        return np.array([straight_electron,returning_electron,non_returning,never_electron]),\
-               [straight_electron_array,returning_electron_array,non_returning_array,never_array],\
-               [straight_event,returning_electron_event,non_returning_event,never_event]
+        elcount = np.array([straight_electron,returning_electron,non_returning,never_electron])
+        elcount_event = [straight_event,returning_electron_event,non_returning_event,never_event]
+        elcount_energy = [straight_electron_array,returning_electron_array,non_returning_array,never_array]
+        path = self.save_path + "electron_counts/"
+        if not os.path.exists(path):
+            os.makedirs(path)
+        filename = (f'_{self.pe}PE_{self.angle}angle')
+        np.save(path+'electron_count'+filename+'.npy',elcount)
+        np.save(path+'electron_count_event'+filename+'.npy',elcount_event)
+        np.save(path+'electron_count_energy'+filename+'.npy',elcount_energy)
+        return elcount, elcount_event, elcount_energy
     
     
     def gaussian(self,x, a,mu,sig):
