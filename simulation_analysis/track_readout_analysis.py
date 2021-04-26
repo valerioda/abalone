@@ -51,7 +51,9 @@ class track_and_readout:
         print("Initializing",self.pe,"pe, at angle",self.angle)
         
         self.area_collection = self.load_readout_data(self)
-        self.track_data,self.total_events = self.load_track_data(self)       
+        #self.track_data,self.total_events = self.load_track_data_old(self)
+        #self.e_stat,self.Edep_dist,self.e_ID = self.electron_count_old(self)
+        self.track_data,self.total_events = self.load_track_data(self)
         self.e_stat,self.Edep_dist,self.e_ID = self.electron_count(self)
         
     def load_readout_data(self,arg):
@@ -60,7 +62,7 @@ class track_and_readout:
         for num in self.file_number_range:
             path = self.main_path + "SiPM/"
             file_name = path + "SiPM_readout_" + str(self.pe) + "_" + str(self.angle) + "_run_" + str(num) +".txt"
-            print("reading " + file_name)
+            #print("reading " + file_name)
             #data = pd.read_json(file_name,lines=True)
             #data_column = np.array(data['voltages']) #.to_numpy()
             #for i in range(len(data_column)):
@@ -79,85 +81,44 @@ class track_and_readout:
         return collection
     
     def load_track_data(self,arg):
-        all_loaded_data = pd.DataFrame(columns=["Event_ID","Parent_ID","Track_ID","Particle","X","Y","Z","Time","KE","DE","Volume"])
+        t_start = time.time()
         total_len = 0
-        ID = []
-        Event = []
-        Parent = []
-        Track = []
-        Particle = []
-        X = []
-        Y = []
-        Z = []
-        Time = []
-        KE = []
-        DE = []
-        Volume = []
-        df1 = pd.DataFrame(columns=["ID","Event_ID","Parent_ID","Track_ID","Particle","X","Y","Z","Time","KE","DE","Volume"])
-        
-        for num in self.file_number_range:
+        ID, Event, Parent, Track, Particle, X, Y, Z, Time, KE, DE, Volume = [], [], [], [],[], [], [], [],[], [], [], []
+        df = pd.DataFrame(columns=["Event_ID","Parent_ID","Track_ID",
+                                   "Particle","X","Y","Z","Time","KE","DE","Volume"])
+        for fnum, num in enumerate(self.file_number_range):
             path = self.main_path + "tracking/"
             file_name = path + str(self.pe)+"_" + str(self.angle)+"_track_" + str(num) + ".root"
-            
-            print("reading " + file_name)#display("reading " + os.path.join(r,filename))
-            
             file = uproot.open(file_name)
-            tree = file["ntuple/ABALONE"]
-            df = pd.DataFrame(columns=["Event_ID","Parent_ID","Track_ID","Particle","X","Y","Z","Time","KE","DE","Volume"])
-            df["Event_ID"] = (tree.array("Event_ID")).astype(int)+int(total_len)
-            df["Parent_ID"] = (tree.array("Parent_ID")).astype(int)
-            df["Track_ID"] = (tree.array("Track_ID")).astype(int)
-            df["Particle"] = tree.array("Particle")
-            df["X"] = tree.array("X")
-            df["Y"] = tree.array("Y")
-            df["Z"] = tree.array("Z")
-            df["Time"] = tree.array("Time")
-            df["KE"] = tree.array("KE")
-            df["DE"] = tree.array("DE")
-            df["Volume"] = (tree.array("Volume")).astype(int)
-            df.loc[df["Particle"] == 0 , "Particle"] = "e-"
-            df.loc[df["Particle"] == 1 , "Particle"] = "photon"
-            frames = [all_loaded_data,df]
-            all_loaded_data = pd.concat(frames)
-            total_len += len(set(df["Event_ID"].values))
-            """
-            print(list(set(df["Event_ID"].values)))
-            ID = np.append(ID,list(set(df["Event_ID"].values)))
-            Event = np.append(Event,(tree.array("Event_ID")).astype(int)+int(total_len))
-            Parent = np.append(Parent,(tree.array("Parent_ID")).astype(int))
-            Track = np.append(Track,(tree.array("Track_ID")).astype(int))
-            Particle = np.append(Particle,tree.array("Particle"))
-            X = np.append(X,tree.array("X"))
-            Y = np.append(Y,tree.array("Y"))
-            Z = np.append(Z,tree.array("Z"))
-            Time = np.append(Time,tree.array("Time"))
-            KE = np.append(KE,tree.array("KE"))
-            DE = np.append(DE,tree.array("DE"))
-            Volume = np.append(Volume,(tree.array("Volume")).astype(int))
+            tree = file["ntuple/ABALONE"]           
             
-        df1["ID"] = ID
-        df1["Event_ID"] = Event
-        df1["Parent_ID"] = Parent
-        df1["Track_ID"] = Track
-        df1["Particle"] = Particle
-        df1["X"] = X
-        df1["Y"] = Y
-        df1["Z"] = Z
-        df1["Time"] = Time
-        df1["KE"] = KE    
-        df1["DE"] = DE
-        df1["Volume"] = Volume
-        df1.loc[df1["Particle"] == 0 , "Particle"] = "e-"
-        df1.loc[df1["Particle"] == 1 , "Particle"] = "photon"
-        print('OLD DATAFRAME\n',all_loaded_data)
-        print('NEW DATAFRAME\n',df1)
-        """
-        all_loaded_data["Event_ID"] = pd.to_numeric(all_loaded_data["Event_ID"], downcast='signed')
-        return all_loaded_data,total_len
+            Ev = tree.array("Event_ID")
+            i_split = np.zeros(4,dtype=int)
+            for ii in range(5):
+                if ii != 0: i_split[ii-1] = np.where(Ev==ii)[0][0]
+                Event.append(ii+total_len)
+            Parent = np.append(Parent,np.split(tree.array("Parent_ID").astype(int),i_split))
+            Track = np.append(Track,np.split(tree.array("Track_ID").astype(int),i_split))
+            Particle = np.append(Particle,np.split(tree.array("Particle").astype(int),i_split))
+            X = np.append(X,np.split(tree.array("X"),i_split))
+            Y = np.append(Y,np.split(tree.array("Y"),i_split))
+            Z = np.append(Z,np.split(tree.array("Z"),i_split))
+            Time = np.append(Time,np.split(tree.array("Time"),i_split))
+            KE = np.append(KE,np.split(tree.array("KE"),i_split))
+            DE = np.append(DE,np.split(tree.array("DE"),i_split))
+            Volume = np.append(Volume,np.split(tree.array("Volume").astype(int),i_split))
+            total_len += 5
+        df["Event_ID"], df["Parent_ID"] = Event, Parent
+        df["Track_ID"], df["Particle"] = Track, Particle
+        df["X"], df["Y"], df["Z"], df["Time"] = X, Y, Z, Time
+        df["KE"], df["DE"] = KE, DE
+        df["Volume"] = Volume
+        print(f'\ntime load with new method {time.time() - t_start:.2f}')
+        #print('NEW DATAFRAME\n',df)
+        return df,total_len
     
-   
-    def electron_count(self,arg):  #counting non-returning backscattered electron directly, and their energy deposited
-        print('counting electrons...')
+    def electron_count(self,arg): 
+        print('counting electrons with new method...')
         t_start = time.time()
         non_returning = 0     # electrons getting back-scattered to somewhere else
         non_returning_array = []
@@ -177,46 +138,22 @@ class track_and_readout:
         never_event=[]
         
         sc_vol = 15
-        electron_select = (self.track_data['Parent_ID']==0)
-        
-        #non_ev = []
-        #mask_non = (sc_vol in temp['Volume'].values) & (temp['Volume'].values[-1] != sc_vol)
-        #non_ev.append(temp['Event_ID'][electrons_ID & mask_non])
-        #print('new list of non-returning',non_ev)
-        
-        for i in range(0,int(max(self.track_data["Event_ID"])+1)):
-            event_select = self.track_data['Event_ID'] == i
-            scintillator = self.track_data['Volume'] == sc_vol
-            temp = self.track_data[event_select & electron_select]
-            for j in range (int(min(temp["Track_ID"])),int(max(temp["Track_ID"])+1)):
-                #electrons_ID = self.track_data['Track_ID']==j
-                #each_df = self.track_data[event_select & electron_select & electrons_ID]
-                #Edep_df = self.track_data[event_select & electron_select & scintillator & electrons_ID]
-                electrons_ID = temp['Track_ID']==j
-                
-                each_df = temp[(electrons_ID)]
-                Edep_df = temp[(electrons_ID)&(temp['Volume']==sc_vol)]
-
-                energy = Edep_df["DE"].sum()
-                if sc_vol in each_df['Volume'].values and (each_df['Volume'].values)[-1] != sc_vol: #non-returning
+        for i in range(0,len(self.track_data["Event_ID"])):
+            prt = self.track_data['Parent_ID'][i]
+            trk = self.track_data['Track_ID'][i]
+            vol = self.track_data['Volume'][i]
+            for j in list(set(trk[prt==0])):
+                energy = self.track_data["DE"][i][(prt==0) & (trk==j) & (vol==sc_vol)].sum()
+                vol = vol[prt==0]
+                if sc_vol in vol and vol[-1] != sc_vol:
                     non_returning += 1
                     non_returning_array.append(energy)
                     non_returning_event.append(i)
-                
-                flag = 0
-                #contains returning and straight electron!
-                if sc_vol in each_df['Volume'].values and (each_df['Volume'].values)[-1] == sc_vol:
-                    vol_array = each_df['Volume'].values
-                    # find the flag (1 for straight, 0 for returning)
-                    idx = np.array(np.where(vol_array==sc_vol)[0])
+                if sc_vol in vol and vol[-1] == sc_vol:
+                    idx = np.array(np.where(vol==sc_vol)[0])
                     maxi, mini = np.max(idx), np.min(idx)
                     if np.sum(idx) == (len(idx)/2)*(mini + maxi): flag = 0
                     else: flag = 1
-                    
-                    #for k in range(len(vol_array)-1):
-                    #    if vol_array[k] == sc_vol and vol_array[k+1]!=sc_vol:
-                    #        flag=1
-                    
                     if flag == 0:
                         straight_electron += 1
                         straight_electron_array.append(energy)
@@ -225,18 +162,11 @@ class track_and_readout:
                         returning_electron += 1
                         returning_electron_array.append(energy)
                         returning_electron_event.append(i)
-                        
-                if not sc_vol in each_df['Volume'].values:
+                if not sc_vol in vol:
                     never_electron +=1
                     never_array.append(energy)
                     never_event.append(i)
         
-        straight_event = list(set(straight_event))
-        non_returning_event=list(set(non_returning_event))
-        returning_electron_event=list(set(returning_electron_event))
-        never_event=list(set(never_event))
-        
-        #print('old list of non-returning',non_returning_event)
         print(f'time to count electrons {time.time() - t_start:.2f}')
         print('straight event', len(straight_event))
         print('non returning event', len(non_returning_event))
