@@ -29,11 +29,11 @@ def main():
     else: PE = 1
 
     if args['filenumber']: fn = int(args['filenumber'][0])
-    else: fn = 2000
+    else: fn = 7000
     
     print('Track and readout analysis with',PE,'PE and',angle,'angle')
     file_number_range = range(1,fn+1)
-    main_path = '/home/pieramico/AIUTO/provo/'
+    main_path = '/home/pieramico/ABALONELYSO/results/'
     save_path = './'
     pe1_ang0 = track_and_readout(PE,angle,file_number_range,main_path,save_path)
     #plot_spectra(pe1_ang0,save_path)
@@ -77,6 +77,8 @@ class track_and_readout:
                     except: pass
         filename = (f'_{self.pe}PE_{self.angle}angle')
         path = self.save_path + "electron_counts/"
+        if not os.path.exists(path):
+            os.makedirs(path)
         np.save(path+'electron_count_area'+filename+'.npy',collection)
         return collection
     

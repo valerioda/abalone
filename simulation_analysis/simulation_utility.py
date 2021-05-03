@@ -18,9 +18,8 @@ import iminuit
 import uproot
 
 
-def read_waveforms_from_json( PE = 1, angle = 0, plot = False ):
+def read_waveforms_from_json(path = '/home/dandrea/abalone_simulation/results/SiPM', PE = 1, angle = 0, plot = False ):
     wfs = []
-    path = '/home/dandrea/abalone_simulation/results/SiPM'
     t_start = time.time()
     #os.listdir(directory)
     i = 1
@@ -104,7 +103,7 @@ def integral_simulation_peaks( wf, peaks_list, dtl = -2, dtr = 1,
         if dt < tc: continue #skip peaks if is too close to next one
         tlo = peaks_list[2*i]-tll
         if tlo < 0: tlo = 0
-        bl = np.max(wf[tlo:peaks_list[2*i]+1])
+        bl = np.min(wf[tlo:peaks_list[2*i]+1])
         Am = wf[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
         ttm = tt[peaks_list[2*i]:peaks_list[2*i+1] + tlr]
         amp = np.max(Am) #local amplitude of the signal
@@ -130,12 +129,18 @@ def integral_simulation_peaks( wf, peaks_list, dtl = -2, dtr = 1,
                                     bounds =  ([amp/1.5, 1/100], [amp*1.5, 10/100]))
             a, b = popt
             tnew = tt[tr[0]:]
+            fct_int = lambda x : bl + fct_fit(x, a, b)
+            #print('bl, a, b : ', bl, a, b)
+            Ir, err = integ.quad(fct_int, 0, (tlim-dtr))
+            #Ir, err = integ.quad(fct_int, 0, (tlim-dtr)/100)
+            inttot = Il + Ir
+            integrals.append(inttot)
             if plot:
                 plt.figure(figsize=(8,4.5))
                 fct_fit_tot = fct_fit((tnew-tr[0]),a,b)
                 tnew2 = min(tlim, tt[-1]-tr[0])
                 tplot = tt[tmin+dtl-20:tmin+tnew2+20]
-                plt.plot(tplot,wf[tmin+dtl-20:tmin+tnew2+20],label='SiPM signal')
+                plt.plot(tplot,wf[tmin+dtl-20:tmin+tnew2+20],label=f'SiPM signal area= {inttot:.2f}')
                 plt.plot(tnew[:tnew2], fct_fit_tot[:tnew2],
                          label=f'fit f(x) = baseline - a*exp(-b*x):\n a = {a:.2f}, b = {b:.2f}')
                 plt.axhline(bl, color = 'r', label = 'baseline')
@@ -149,12 +154,7 @@ def integral_simulation_peaks( wf, peaks_list, dtl = -2, dtr = 1,
                 #plt.ylabel('amplitude',ha='right',y=1)
                 plt.legend()
                 tlimplot = tr[0]
-            fct_int = lambda x : bl + fct_fit(x, a, b)
-            #print('bl, a, b : ', bl, a, b)
-            Ir, err = integ.quad(fct_int, 0, (tlim-dtr))
-            Ir, err = integ.quad(fct_int, 0, (tlim-dtr)/100)
-            inttot = Il + Ir
-            integrals.append(inttot)
+            
             #print(f'Amp: {amp:.2f} Integral: {Il:.3f} + {Ir:.3f} = {inttot:.3f}')
             tl = tt[tt >= peaks_list[2*i+1]+dtl]
     return integrals

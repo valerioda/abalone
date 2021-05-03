@@ -1,10 +1,10 @@
 Track and readout analysis with 1 PE and 85 angle
 Initializing 1 pe, at angle 85
 
-time load with new method 185.39
+time load with new method 702.73
 counting electrons with new method...
-time to count electrons 1.50
-straight event 1235
-non returning event 1406
-returning electron event 149
-never event 7210
+time to count electrons 5.53
+straight event 3399
+non returning event 3779
+returning electron event 477
+never event 27345
