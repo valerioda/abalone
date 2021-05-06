@@ -11,9 +11,9 @@ import time
 import json
 import os
 
-def read_waveforms_from_json( PE = 4, angle = 0, plot = False ):
+def read_waveforms_from_json( PE = 1, angle = 0, plot = False ):
     wfs = []
-    path = '/home/pieramico/AIUTO/provo/SiPM'
+    path = '/home/pieramico/ABALONELYSO/results/SiPM/'
     t_start = time.time()
     #os.listdir(directory)
     i = 1
@@ -145,7 +145,7 @@ def integral_simulation_peaks( wf, peaks_list, dtl = -2, dtr = 1,
             fct_int = lambda x : bl + fct_fit(x, a, b)
             #print('bl, a, b : ', bl, a, b)
             Ir, err = integ.quad(fct_int, 0, (tlim-dtr))
-            Ir, err = integ.quad(fct_int, 0, (tlim-dtr)/100)
+            #Ir, err = integ.quad(fct_int, 0, (tlim-dtr)/100)
             inttot = Il + Ir
             integrals.append(inttot)
             #print(f'Amp: {amp:.2f} Integral: {Il:.3f} + {Ir:.3f} = {inttot:.3f}')
@@ -169,13 +169,15 @@ def calculate_integrals(wf,PE=1,angle=0):
     np.save(f'integrals/integrals_PE{PE}_angle{angle}.npy',integrals)
     plt.figure(figsize=(8,4.5))
     integrals1 = np.load(f'integrals/integrals_PE1_angle0.npy')
-    integrals2 = np.load(f'integrals/integrals_PE2_angle0.npy')
-    integrals3 = np.load(f'integrals/integrals_PE3_angle0.npy')
-    print(f'n. events: 1PE={len(integrals)}, 2PE={len(integrals)}, 3PE={len(integrals)}')
+    #integrals2 = np.load(f'integrals/integrals_PE2_angle0.npy')
+    #integrals3 = np.load(f'integrals/integrals_PE3_angle0.npy')
+    #integrals6 = np.load(f'integrals/integrals_PE4_angle0.npy')
+    print(f'n. events: 1PE={len(integrals)}')
     a = plt.hist(integrals1,bins=200,range=(1000,30000),density=0,histtype='step',label=f'1 PE')
-    a = plt.hist(integrals2,bins=200,range=(1000,30000),density=0,histtype='step',label='2 PE',color='coral')
-    a = plt.hist(integrals3,bins=200,range=(1000,30000),density=0,histtype='step',label='3 PE', color= 'darkgreen')
-    plt.ylim(0,400)
+    #a = plt.hist(integrals2,bins=200,range=(1000,30000),density=0,histtype='step',label='2 PE',color='coral')
+    #a = plt.hist(integrals3,bins=200,range=(1000,30000),density=0,histtype='step',label='3 PE', color= 'darkgreen')
+    #a = plt.hist(integrals6,bins=200,range=(1000,50000),density=0,histtype='step',label='4PE',color= 'red')
+    #plt.ylim(0,400)
     #plt.yscale('log')
     plt.legend()
     return integrals 
