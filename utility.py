@@ -319,7 +319,7 @@ def plot_area_spectrum(AREAs,bins=200, logx=True, logy=True,volts=10,low=3.5, hi
     a=plt.hist(AREAs,bins=area_space,histtype='step',lw=2,density=False)
     if logx==True: plt.xscale('log')
     if logy==True: plt.yscale('log')
-    plt.title('ABALONE 19_07_2021 T1637 19kV LED 2.99V')
+    plt.title(f'ABALONE at {volts} kV')
     plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1)
     plt.ylabel('counts',ha='right',y=1)
     
@@ -334,7 +334,7 @@ def plot_area_max(AREAs,MAXs,bins=200,volts=10,low=3.5, high=6,low2=0.5, high2=4
     plt.yscale('log')
     plt.xlabel('area (ADC x $\mu$s)', ha='right', x=1, fontsize=12)
     plt.ylabel('MAXpeaks', ha='right', y=1, fontsize=12)
-    plt.title('ABALONE 20_07_2021 T1637 19kV LED 2.99V')
+    plt.title(f'ABALONE at {volts} kV')
     plt.colorbar()
     
 def plot_area_fom(AREAs,FOMs,bins=200,volts=10,low=3.5, high=6, low_fom = 0, high_fom = 5):
@@ -348,7 +348,7 @@ def plot_area_fom(AREAs,FOMs,bins=200,volts=10,low=3.5, high=6, low_fom = 0, hig
     #plt.xlim(0,1e6)
     plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1,fontsize=12)
     plt.ylabel('FOM',ha='right',y=1,fontsize=12)
-    plt.title('ABALONE 20_07_2021 T1637 19kV LED 2.99V AREAs Vs FOMs')
+    plt.title(f'ABALONE at {volts} kV')
     plt.colorbar()
     
 def plot_area_width(AREAs,width50,bins=200,volts=10,low=3.5, high=6,low2=1.5, high2=4.5):
@@ -361,7 +361,7 @@ def plot_area_width(AREAs,width50,bins=200,volts=10,low=3.5, high=6,low2=1.5, hi
     plt.yscale('log')
     plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1,fontsize=12)
     plt.ylabel('width 50%',ha='right',y=1,fontsize=12)
-    plt.title('ABALONE 20_07_2021 T1637 19kV LED 2.99V AREAs Vs Width50')
+    plt.title(f'ABALONE at {volts} kV')
     plt.colorbar()
 
         
@@ -373,7 +373,7 @@ def plot_area_entropy(AREAs,ENTRs,bins=200,volts=10,low=3.5, high=6,low2=0, high
     plt.xscale('log')
     plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1,fontsize=12)
     plt.ylabel('entropy',ha='right',y=1,fontsize=12)
-    plt.title(f'ABALONE 20_07_2021 T1637 19kV LED 2.99V AREAs Vs Entropy')
+    plt.title(f'ABALONE at {volts} kV')
     plt.colorbar()
     
 def plot_area_risetime(AREAs,RTs,bins=200,volts=10,low=3.5, high=6,low2=-1, high2=450):
@@ -385,7 +385,7 @@ def plot_area_risetime(AREAs,RTs,bins=200,volts=10,low=3.5, high=6,low2=-1, high
     #plt.yscale('log')
     plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1,fontsize=12)
     plt.ylabel('risetime (ns)',ha='right',y=1,fontsize=12)
-    plt.title(f'ABALONE 20_07_2021 T1637 19kV LED 2.99V AREAs Vs RiseTime')
+    plt.title(f'ABALONE at {volts} kV')
     plt.colorbar()
     
 def plot_risetime_entropy(RTs,ENTRs,bins=200,volts=10,low=0, high=450,low2=1, high2=200):
@@ -396,6 +396,6 @@ def plot_risetime_entropy(RTs,ENTRs,bins=200,volts=10,low=0, high=450,low2=1, hi
     #plt.xscale('log')
     plt.xlabel('risetime (ns)',ha='right',x=1,fontsize=12)
     plt.ylabel('entropy',ha='right',y=1,fontsize=12)
-    plt.title(f'ABALONE 20_07_2021 T1637 19kV LED 2.99V Risetime Vs Entropy')
+    plt.title(f'ABALONE at {volts} kV')
     plt.colorbar()
     
