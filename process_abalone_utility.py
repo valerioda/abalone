@@ -174,7 +174,7 @@ def bimodal(x,a1,mu1,sigma1,a2,mu2,sigma2):#,a,b):
     return gauss(x,a1,mu1,sigma1)+gauss(x,a2,mu2,sigma2)#+expo(x,a,b)
 
 
-def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100):
+def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100, fit_range=(0,100)):
     area_space = np.linspace(low,high, bins)
     h, t = np.histogram(area, bins=area_space)
     plt.figure(figsize=(12,6))
@@ -189,7 +189,8 @@ def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100):
     #bounds = ([hmax/2, mu-sig, 0, 0, 2*mu-1, 0, 0, 0 ], [2*hmax, mu+sig, 2*sig, hmax, 2*mu+sig, 2*sig, hmax,1])
     guess = (hmax, mu, sig, hmax/3, 2*mu, sig)
     bounds = ([hmax/2, mu-sig, 0, 0, 2*mu-sig, 0], [2*hmax, mu+sig, 2*sig, hmax, 2*mu+sig, 2*sig])
-    popt, pcov = curve_fit(bimodal, t[1:], h, p0 = guess, bounds = bounds)
+    idx1, idx2 = np.where(t>fit_range[0])[0][0], np.where(t>fit_range[1])[0][0]
+    popt, pcov = curve_fit(bimodal, t[idx1:idx2], h[idx1:idx2], p0 = guess, bounds = bounds)
     perr = np.sqrt(np.diag(pcov))
     plt.plot(t, bimodal(t, *popt), label = f'PE fit')
     plt.plot(t, gauss(t, *popt[:3]), label = f'1PE = {popt[1]:.2f} $\pm$ {popt[2]:.2f} ADC x $\mu$s')
@@ -202,7 +203,7 @@ def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100):
     return popt
 
 
-def calculate_integrals( data, volts = 15, nn = 0, ampllim = 5, tfit = 30, dtl=-10, dtr=3, plot = False, save = False):
+def calculate_integrals( data, volts = 15, sipmv = 30, nn = 0, ampllim = 5, tfit = 30, dtl=-10, dtr=3, plot = False, save = False):
     if nn == 0: nn = len(data)
     peakint = np.zeros(nn)
     print('Total events:',nn)
@@ -210,11 +211,18 @@ def calculate_integrals( data, volts = 15, nn = 0, ampllim = 5, tfit = 30, dtl=-
     for i in range(nn):
         if plot: plt.figure(figsize=(12,6))
         listpeaks = prsu.search_peaks(data[i], 4, ampllim=ampllim, plot = False)
-        try: peakint[i] = prsu.integral_central_peak(data[i],listpeaks, dtl = dtl, dtr = dtr, tfit=tfit,
-                                  tlim = 200, tc = 6, tll = 8, tlr = 10, plot = plot)
-        except: pass
+        integral = prsu.integral_central_peak(data[i],listpeaks, dtl = dtl, dtr = dtr, tfit=tfit,
+                                              tlim = 200, tc = 6, tll = 8, tlr = 10, plot = plot)
+        if integral:
+            peakint[i] = integral
+        else:
+            wf = np.mean(data[i][:40])-data[i]
+            ll, hh = int(len(wf)/2)-200, int(len(wf)/2)+200
+            max_pos = np.where(wf==np.max(wf[ll:hh]))[0][0]
+            area = np.sum(wf[max_pos-10:max_pos+90])
+            peakint[i] = area/100
         diff = time.time() - t_start
         if (i % 1000) == 0:
             print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')
-    if save: np.save(f'processed_data/peakint_SiPM1_ABALONE_{volts}kV.npy', peakint)
+    if save: np.save(f'processed_data/peakint_ABALONE_{volts}kV_SiPM2_{sipmv}V.npy', peakint)
     return peakint

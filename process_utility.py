@@ -330,7 +330,8 @@ def integral_central_peak( wf, peaks_list, dtl = -2, dtr = 1,
             inttot = Il + Ir
             #print(f'Integral: {Il:.1f} + {Ir:.1f} = {inttot:.2f}')
             tl = tt[tt >= peaks_list[2*i+1]+dtl]
-    if inttot is not 0: return inttot
+    #if inttot is not 0: return inttot
+    return inttot
 
 
 def integral_peaks( wf, peaks_list, dtl = -2, dtr = 1,
