@@ -174,27 +174,31 @@ def bimodal(x,a1,mu1,sigma1,a2,mu2,sigma2):#,a,b):
     return gauss(x,a1,mu1,sigma1)+gauss(x,a2,mu2,sigma2)#+expo(x,a,b)
 
 
-def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100, fit_range=(0,100)):
+def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100, fit_range=(0,100), dpe = False):
     area_space = np.linspace(low,high, bins)
     h, t = np.histogram(area, bins=area_space)
     plt.figure(figsize=(12,6))
     a1 = plt.hist(area,bins=area_space,histtype='step',lw=2,density=False)
-    imax = np.argmax(h)
-    mu, hmax = t[imax], h[imax] 
-    idx = np.where(h>hmax/2) # fwhm 
+    idx1, idx2 = np.where(t>fit_range[0])[0][0], np.where(t>fit_range[1])[0][0]
+    imax = np.argmax(h[idx1:idx2])+idx1
+    mu, hmax = t[imax], h[imax]
+    idx = np.where(h[idx1:idx2]>hmax/2) # fwhm 
     ilo, ihi = idx[0][0], idx[0][-1]
     sig = (t[ihi]-t[ilo]) / 2.355
-    #popt, pcov = curve_fit(gauss, t[1:], h, p0 = np.array([hmax, mu, sig]))
-    #guess = (hmax, mu, sig, hmax/3, 2*mu, sig, h[0],0.1)
-    #bounds = ([hmax/2, mu-sig, 0, 0, 2*mu-1, 0, 0, 0 ], [2*hmax, mu+sig, 2*sig, hmax, 2*mu+sig, 2*sig, hmax,1])
-    guess = (hmax, mu, sig, hmax/3, 2*mu, sig)
-    bounds = ([hmax/2, mu-sig, 0, 0, 2*mu-sig, 0], [2*hmax, mu+sig, 2*sig, hmax, 2*mu+sig, 2*sig])
-    idx1, idx2 = np.where(t>fit_range[0])[0][0], np.where(t>fit_range[1])[0][0]
-    popt, pcov = curve_fit(bimodal, t[idx1:idx2], h[idx1:idx2], p0 = guess, bounds = bounds)
+    
+    if dpe:
+        guess = (hmax, mu, sig, hmax/3, 2*mu, sig)
+        bounds = ([hmax/2, mu-sig, 0, 0, 2*mu-sig, 0], [2*hmax, mu+sig, 2*sig, hmax, 2*mu+sig, 2*sig])
+        popt, pcov = curve_fit(bimodal, t[idx1:idx2], h[idx1:idx2], p0 = guess, bounds = bounds)
+    else:
+        guess = (hmax, mu, sig)
+        bounds = ([hmax/2, mu-sig, 0], [2*hmax, mu+sig, 2*sig])
+        popt, pcov = curve_fit(gauss, t[idx1:idx2], h[idx1:idx2], p0 = guess, bounds = bounds)
     perr = np.sqrt(np.diag(pcov))
-    plt.plot(t, bimodal(t, *popt), label = f'PE fit')
+    if dpe: plt.plot(t, bimodal(t, *popt), label = f'PE fit')
     plt.plot(t, gauss(t, *popt[:3]), label = f'1PE = {popt[1]:.2f} $\pm$ {popt[2]:.2f} ADC x $\mu$s')
-    plt.plot(t, gauss(t, *popt[3:6]), label = f'2PE = {popt[4]:.2f} $\pm$ {popt[5]:.2f} ADC x $\mu$s')
+    #plt.plot(t, gauss(t, *guess[:3]), label = 'guess')
+    if dpe: plt.plot(t, gauss(t, *popt[3:6]), label = f'2PE = {popt[4]:.2f} $\pm$ {popt[5]:.2f} ADC x $\mu$s')
     #plt.plot(t, expo(t, *popt[6:] ), label = f'exp = {popt[6]:.1f} + {popt[7]:.2f} x area')
     plt.title(f'ABALONE at {volts} kV')
     plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1)
@@ -203,7 +207,7 @@ def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100, fit_range
     return popt
 
 
-def calculate_integrals( data, volts = 15, sipmv = 30, nn = 0, ampllim = 5, tfit = 30, dtl=-10, dtr=3, plot = False, save = False):
+def calculate_integrals( data, volts = 15, sipmv = 30, ledv = '3p0', nn = 0, ampllim = 5, tfit = 30, dtl=-10, dtr=3, plot = False, save = False):
     if nn == 0: nn = len(data)
     peakint = np.zeros(nn)
     print('Total events:',nn)
@@ -224,5 +228,5 @@ def calculate_integrals( data, volts = 15, sipmv = 30, nn = 0, ampllim = 5, tfit
         diff = time.time() - t_start
         if (i % 1000) == 0:
             print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')
-    if save: np.save(f'processed_data/peakint_ABALONE_{volts}kV_SiPM2_{sipmv}V.npy', peakint)
+    if save: np.save(f'processed_data/peakint_ABALONE_{volts}kV_SiPM2_{sipmv}V_LED_{ledv}V.npy', peakint)
     return peakint
