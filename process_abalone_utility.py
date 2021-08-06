@@ -173,8 +173,17 @@ def expo(x, a, b):
 def bimodal(x,a1,mu1,sigma1,a2,mu2,sigma2):#,a,b):
     return gauss(x,a1,mu1,sigma1)+gauss(x,a2,mu2,sigma2)#+expo(x,a,b)
 
+def plot_pe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100):
+    area_space = np.linspace(low,high, bins)
+    h, t = np.histogram(area, bins=area_space)
+    plt.figure(figsize=(12,6))
+    a1 = plt.hist(area,bins=area_space,histtype='step',lw=2,density=False)
+    plt.title(f'ABALONE at {volts} kV - LED at {ledv:.1f} V')
+    plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1)
+    plt.ylabel('counts',ha='right',y=1)
 
-def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100, fit_range=(0,100), dpe = False):
+
+def fit_pe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100, fit_range=(0,100), dpe = False):
     area_space = np.linspace(low,high, bins)
     h, t = np.histogram(area, bins=area_space)
     plt.figure(figsize=(12,6))
@@ -200,7 +209,7 @@ def fit_pe_spectrum(area, bins = 200, volts = 10, low = 0, high = 100, fit_range
     #plt.plot(t, gauss(t, *guess[:3]), label = 'guess')
     if dpe: plt.plot(t, gauss(t, *popt[3:6]), label = f'2PE = {popt[4]:.2f} $\pm$ {popt[5]:.2f} ADC x $\mu$s')
     #plt.plot(t, expo(t, *popt[6:] ), label = f'exp = {popt[6]:.1f} + {popt[7]:.2f} x area')
-    plt.title(f'ABALONE at {volts} kV')
+    plt.title(f'ABALONE at {volts} kV - LED at {ledv:.1f} kV')
     plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1)
     plt.ylabel('counts',ha='right',y=1)
     plt.legend()
