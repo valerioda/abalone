@@ -22,7 +22,8 @@ def plot_data(data, fvolt=19, low=3.5, high=6, low_max= 1.5, high_max = 4, low_r
     psu.plot_risetime_entropy(data['risetime'],data['entropy'],bins=200,volts=fvolt,low2=low_en,high2=high_en)
     
     
-def process_abalone_data(filename,nn=0,nplot=5,width_calc=False,w=10):
+def process_abalone_data( filename, nn = 0, nplot = 5, width_calc = False,
+                         save = False, volts = 15, sipmv = 30, ledv = '3p0' ):
     #fvolt=(filename.split('/')[-1].split('.')[0].split('_')[5])
     #fled=(filename.split('/')[-1].split('.')[0].split('_')[8])
     #sipmn=(filename.split('/')[-1].split('.')[0].split('_')[6])
@@ -100,16 +101,12 @@ def process_abalone_data(filename,nn=0,nplot=5,width_calc=False,w=10):
     data['fom'] = FOMs
     data['entropy'] = ENTRs
     data['risetime'] = RTs
-    d_out = './processed_data'
-    try: os.mkdir(d_out)
-    except: pass
-    #data.to_hdf(f'{d_out}/ABALONE_{fvolt}V_{sipmn}_{sipmv}_{fled}.h5', key='df', mode='w')
-    #data.to_hdf(f'{d_out}/2021_07_20_T1637_ABALONE_19kV_SiPM2_30V_NoLED.h5', key='df', mode='w')
+    if save: data.to_hdf(f'processed_data/data_ABALONE_{volts}kV_SiPM2_{sipmv}V_LED_{ledv}V.h5', key='df', mode='w')
     return data
 
 
-def select_data(data,filename,fvolt=18,entr_cut=20,max_cut=20,area_cut=(0,1e7),rt_cut=100,pos_cut=(100,900),
-                events=10):
+def select_data(data,filename,entr_cut=20,max_cut=20,area_cut=(0,1e7),rt_cut=100,pos_cut=(100,900), events=10,
+                save = False, volts = 15, sipmv = 30, ledv = '3p0' ):
     wfs = psu.read_file(filename)
     
     # cut on area_up
@@ -157,7 +154,7 @@ def select_data(data,filename,fvolt=18,entr_cut=20,max_cut=20,area_cut=(0,1e7),r
     data_sel = data[mask]
     try: psu.plot_waveforms( wfs_sel, events = events )
     except: pass
-    #plot_data(data=data_sel,fvolt=fvolt,low=1.5, high=6.5,low3=1, high3=5)
+    if save: data_sel.to_hdf(f'processed_data/data_ABALONE_{volts}kV_SiPM2_{sipmv}V_LED_{ledv}V.h5', key='df', mode='w')
     print('Events selected ',len(data_sel),'->',len(data_sel)/len(data)*100,'%')
     return data_sel, wfs_sel
 
