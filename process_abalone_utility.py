@@ -162,10 +162,8 @@ def select_data(data,filename,entr_cut=20,max_cut=20,area_cut=(0,1e7),rt_cut=100
 def gauss(x,a,mu,sigma):
     return a*np.exp(-(x-mu)**2 / (2.*sigma**2))
 
-
 def expo(x, a, b):
     return a*np.exp(-b*x)
-
 
 def bimodal(x,a1,mu1,sigma1,a2,mu2,sigma2):#,a,b):
     return gauss(x,a1,mu1,sigma1)+gauss(x,a2,mu2,sigma2)#+expo(x,a,b)
@@ -236,3 +234,49 @@ def calculate_integrals( data, volts = 15, sipmv = 30, ledv = '3p0', nn = 0, amp
             print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')
     if save: np.save(f'processed_data/peakint_ABALONE_{volts}kV_SiPM2_{sipmv}V_LED_{ledv}V.npy', peakint)
     return peakint
+
+def landau(x,a,loc,scale):
+    return 1.6*a*np.exp(-( (x-loc)/scale + np.exp(-(x-loc)/scale) )/2)
+
+def spe_spectrum(x,a1,mu,sigma,a2,loc,scale):
+    return gauss(x,a1,mu,sigma)+landau(x,a2,loc,scale)
+
+def fit_spe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100, spe_div = 15):
+    area_space = np.linspace(low,high, bins)
+    h, t = np.histogram(area, bins=area_space)
+    plt.figure(figsize=(12,6))
+    a1 = plt.hist(area,bins=area_space,histtype='step',lw=2,density=False)
+    #SPE guess
+    #idx1, idx2 = np.where(t>fit_range[0])[0][0], np.where(t>fit_range[1])[0][0]
+    idx1 = np.where(t>spe_div)[0][0]
+    imax = np.argmax(h[idx1:])+idx1
+    mu, hmax = t[imax], h[imax]
+    idx = np.where(h[idx1:]>hmax/2) # fwhm 
+    ilo, ihi = idx[0][0], idx[0][-1]
+    sig = (t[ihi]-t[ilo]) / 2.355
+    #BS guess
+    imax = np.argmax(h[:idx1])
+    mu0, hmax0 = t[imax], h[imax]
+    idx = np.where(h[:idx1]>hmax/2) 
+    ilo, ihi = idx[0][0], idx[0][-1]
+    sig0 = (t[ihi]-t[ilo]) / 2.355
+    guess = (hmax, mu, sig,hmax0, mu0, sig0)
+    bounds = ([hmax/2, mu-sig, 0,hmax0/2, mu0-sig0, 0], [2*hmax, mu+sig, 2*sig,2*hmax0, mu+sig0, 2*sig0])
+    
+    #fit
+    popt, pcov = curve_fit(spe_spectrum, t[1:], h, p0 = guess, bounds = bounds)
+    perr = np.sqrt(np.diag(pcov))
+    plt.plot(t, spe_spectrum(t, *popt), label = 'spectrum fit')
+    gauss_int = lambda x : gauss(x, *popt[:3])
+    landau_int = lambda x : landau(x, *popt[3:])
+    nspe, spe_er = integ.quad(gauss_int, 0,t[-1])
+    nbs, bs_er = integ.quad(landau_int, 0,t[-1]) 
+    plt.plot(t, gauss(t, *popt[:3]),label=f'SPE at {popt[1]:.2f} $\pm$ {popt[2]:.2f} ADC x $\mu$s')
+    plt.plot(t, landau(t, *popt[3:]),label=f'{nbs/(nbs+nspe)*100:.1f}% NRBE events')
+    #plt.plot(t, spe_spectrum(t, *guess), label = 'guess')
+    plt.title(f'ABALONE at {volts} kV - LED at {ledv:.1f} kV',fontsize=14)
+    plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1,fontsize=14)
+    plt.ylabel('counts',ha='right',y=1,fontsize=14)
+    plt.legend(fontsize=14)
+    
+    return popt[1], popt[2], nspe, nbs
