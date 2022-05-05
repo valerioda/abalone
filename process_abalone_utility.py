@@ -20,20 +20,10 @@ def plot_data(data, fvolt=19, low=3.5, high=6, low_max= 1.5, high_max = 4, low_r
     psu.plot_area_entropy(data['area'],data['entropy'],bins=200,volts=fvolt,low=low,high=high,low2=low_en,high2=high_en)
     psu.plot_area_risetime(data['area'],data['risetime'],bins=200,volts=fvolt,low=low,high=high,low2=low_rt,high2=high_rt)
     psu.plot_risetime_entropy(data['risetime'],data['entropy'],bins=200,volts=fvolt,low2=low_en,high2=high_en)
-    
+    psu.plot_area_tau(data['area'],data['tau'],bins=200,volts=10,low=0., high=3,low2=0, high2=100)
     
 def process_abalone_data( filename, nn = 0, nplot = 5, width_calc = False,
-                         save = False, volts = 15, sipmv = 30, ledv = '3p0' ):
-    #fvolt=(filename.split('/')[-1].split('.')[0].split('_')[5])
-    #fled=(filename.split('/')[-1].split('.')[0].split('_')[8])
-    #sipmn=(filename.split('/')[-1].split('.')[0].split('_')[6])
-    #sipmv=(filename.split('/')[-1].split('.')[0].split('_')[7])
-    #fyear=(filename.split('/')[-1].split('.')[0].split('_')[0])
-    #fmonth=(filename.split('/')[-1].split('.')[0].split('_')[1])
-    #fday=(filename.split('/')[-1].split('.')[0].split('_')[2])
-    #ftime=(filename.split('/')[-1].split('.')[0].split('_')[3])
-    #print(f'Date {fyear}_{fmonth}_{fday} Time {ftime} ABALONE at {fvolt}')
-    
+                         save = False, volts = 15, sipmv = 30, info = 'LED_3p0V' ):
     samples=1024
     data = np.fromfile(filename,  dtype=np.int16)
     n = len(data)/samples
@@ -41,18 +31,27 @@ def process_abalone_data( filename, nn = 0, nplot = 5, width_calc = False,
     data = np.array(np.array_split(np.array(data),n))
     
     print(f'Total events number: {len(data)}')
-    MINs, FOMs, MAXs, INTs, width50, ENTRs, RTs, POSs, TOTs, FILs = [], [], [], [], [], [], [], [], [], []
+    MINs, FOMs, MAXs, INTs, width50, ENTRs, RTs, POSs, TOTs, FILs, TAUs = [], [], [], [], [], [], [], [], [], [], []
     ts = time.time()
     plt.figure(figsize=(12,6))
     if nn == 0: nn = len(data)
+    jj = 0
     for i in range(nn):
         if (i % 100000) == 0: print(f'event n. {i} time to process: {time.time()-ts:.2f}')
         #bl = np.max(data[i][:])
         bl = np.mean(data[i][:40])
         wf = bl-data[i]
         ll, hh = int(len(wf)/2)-200, int(len(wf)/2)+200
-        max_pos = np.where(wf==np.max(wf[ll:hh]))[0][0]
-        POSs.append(np.where(wf==np.max(wf))[0][0])
+        max_pos = np.where(wf==np.max(wf))[0][0]
+        maxx = np.max(wf)
+        POSs.append(np.where(wf==maxx)[0][0])
+        try:
+            tt10 = np.where(wf[max_pos:]<maxx*0.1)[0][0] + max_pos
+            tt90 = np.where(wf[max_pos:]<maxx*0.9)[0][0] + max_pos
+            tau = tt10 - tt90
+        except:
+            tau = 0
+        TAUs.append(tau)
         #datacut = data[np.array(max_pos)>1e6]
         area = np.sum(wf[max_pos-10:max_pos+90])
         if area > 1: fom = np.sum(wf[max_pos:max_pos+90])/area
@@ -62,7 +61,7 @@ def process_abalone_data( filename, nn = 0, nplot = 5, width_calc = False,
         FOMs.append(fom)
         INTs.append(area/100)
         TOTs.append(np.sum(wf)/100)
-        #wf_filt = gaussian_filter1d(wf, w)
+        wf_filt = gaussian_filter1d(wf, 3)
         #FILs.append(np.sum(wf_filt)/100)
         if np.sum(wf) > 1:
             norm = np.abs(wf[wf!=0]/np.sum(wf))
@@ -83,30 +82,34 @@ def process_abalone_data( filename, nn = 0, nplot = 5, width_calc = False,
                 areafrac = np.sum(wf[ilo50:ihi50])/area
                 ii += 1
                 wid50 = ihi50 - ilo50
-            if i < nplot: plt.plot(wf,label=f'A={area:.1f}, width={wid50:.1f}')  
         else:
             wid50 = 0
-            if i < nplot: plt.plot(wf, label=f'A={area:.1f}, entropy={entropy:.2f}, rt={risetime:.2f}')
+        if (jj < nplot):
+            plt.plot(wf, label=f'A={area:.1f}, rt={risetime:.2f}')
+            jj += 1
+        #plt.plot(wf_filt,label='filtered')
         width50.append(wid50)
 
-    plt.legend()
-    data = pd.DataFrame(columns=['area','area_tot','area_filt','width','peak_max','max_pos','baselines','fom', 'entropy', 'risetime'])
+    #plt.legend()
+    #plt.ylim(-10,500)
+    plt.xlim(400,700)
+    data = pd.DataFrame(columns=['area','area_tot','peak_max','max_pos','baselines','fom', 'entropy', 'risetime','tau'])
     data['area'] = INTs
     data['area_tot'] = TOTs
     #data['area_filt'] = FILs
-    if width_calc: data['width'] = width50
+    #if width_calc: data['width'] = width50
     data['peak_max'] = MAXs
     data['max_pos'] = POSs
     data['baselines'] = MINs
     data['fom'] = FOMs
     data['entropy'] = ENTRs
     data['risetime'] = RTs
-    if save: data.to_hdf(f'processed_data/data_ABALONE_{volts}kV_SiPM2_{sipmv}V_LED_{ledv}V.h5', key='df', mode='w')
+    data['tau'] = TAUs
+    if save: data.to_hdf(f'processed_data/data_ABALONE_{volts}kV_SiPM2_{sipmv}V_{info}.h5', key='df', mode='w')
     return data
 
 
-def select_data(data,filename,entr_cut=20,max_cut=20,area_cut=(0,1e7),rt_cut=100,pos_cut=(100,900), events=10,
-                save = False, volts = 15, sipmv = 30, ledv = '3p0' ):
+def select_data(data,filename,entr_cut=20,max_cut=20,area_cut=(0,1e7),rt_cut=100,pos_cut=(100,900), events=10, save = False, volts = 15, sipmv = 30, info = 'LED_3p0V' ):
     wfs = psu.read_file(filename)
     
     # cut on area_up
@@ -154,7 +157,7 @@ def select_data(data,filename,entr_cut=20,max_cut=20,area_cut=(0,1e7),rt_cut=100
     data_sel = data[mask]
     try: psu.plot_waveforms( wfs_sel, events = events )
     except: pass
-    if save: data_sel.to_hdf(f'processed_data/data_ABALONE_{volts}kV_SiPM2_{sipmv}V_LED_{ledv}V.h5', key='df', mode='w')
+    if save: data_sel.to_hdf(f'processed_data/data_ABALONE_{volts}kV_SiPM2_{sipmv}V_{info}.h5', key='df', mode='w')
     print('Events selected ',len(data_sel),'->',len(data_sel)/len(data)*100,'%')
     return data_sel, wfs_sel
 
@@ -168,15 +171,31 @@ def expo(x, a, b):
 def bimodal(x,a1,mu1,sigma1,a2,mu2,sigma2):#,a,b):
     return gauss(x,a1,mu1,sigma1)+gauss(x,a2,mu2,sigma2)#+expo(x,a,b)
 
-def plot_pe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100):
+def plot_pe_spectrum(area, bins = 300, volts = 0, low = 0, high = 500,
+                     log = False):
     area_space = np.linspace(low,high, bins)
     h, t = np.histogram(area, bins=area_space)
     plt.figure(figsize=(12,6))
     a1 = plt.hist(area,bins=area_space,histtype='step',lw=2,density=False)
-    plt.title(f'ABALONE at {volts} kV - LED at {ledv:.1f} V')
-    plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1)
+    plt.title(f'ABALONE at {volts} kV')
+    plt.xlabel('area (ADC x samples)',ha='right',x=1)
     plt.ylabel('counts',ha='right',y=1)
+    if log: plt.yscale('log')
 
+def waveform_selection(area,wf, bins = 300, volts = 0, low = 0, high = 500,
+                     sel = (20, 100),tlim=(4.,7.), log = False):
+    area_space = np.linspace(low, high, bins)
+    h, t = np.histogram(area, bins=area_space)
+    plt.figure(figsize=(12,6))
+    a1 = plt.hist(area,bins=area_space,histtype='step',lw=2,density=False,label='data')
+    plt.title(f'ABALONE at {volts} kV')
+    plt.xlabel('area (ADC x samples)',ha='right',x=1)
+    plt.ylabel('counts',ha='right',y=1)
+    if log: plt.yscale('log')
+    plt.axvspan(sel[0],sel[1],color='r',alpha=0.2,label='selection')
+    plt.legend()
+    wfsel = wf[(area > sel[0]) & (area < sel[1])]
+    psu.plot_waveforms( wfsel,events=20,tlim=tlim)
 
 def fit_pe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100, fit_range=(0,100), dpe = False):
     area_space = np.linspace(low,high, bins)
@@ -210,41 +229,16 @@ def fit_pe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100,
     plt.legend()
     return popt
 
-
-def calculate_integrals( data, volts = 15, sipmv = 30, ledv = '3p0', nn = 0, ampllim = 5, tfit = 30, dtl=-10, dtr=3, plot = False, save = False):
-    if nn == 0: nn = len(data)
-    peakint = np.zeros(nn)
-    print('Total events:',nn)
-    t_start = time.time()
-    for i in range(nn):
-        if plot: plt.figure(figsize=(12,6))
-        listpeaks = prsu.search_peaks(data[i], 4, ampllim=ampllim, plot = False)
-        integral = prsu.integral_central_peak(data[i],listpeaks, dtl = dtl, dtr = dtr, tfit=tfit,
-                                              tlim = 200, tc = 6, tll = 8, tlr = 10, plot = plot)
-        if integral:
-            peakint[i] = integral
-        else:
-            wf = np.mean(data[i][:40])-data[i]
-            ll, hh = int(len(wf)/2)-200, int(len(wf)/2)+200
-            max_pos = np.where(wf==np.max(wf[ll:hh]))[0][0]
-            area = np.sum(wf[max_pos-10:max_pos+90])
-            peakint[i] = area/100
-        diff = time.time() - t_start
-        if (i % 1000) == 0:
-            print(f'event n. {i} area: {peakint[i]:.2f}, time to process: {diff:.2f}')
-    if save: np.save(f'processed_data/peakint_ABALONE_{volts}kV_SiPM2_{sipmv}V_LED_{ledv}V.npy', peakint)
-    return peakint
-
 def landau(x,a,loc,scale):
     return 1.6*a*np.exp(-( (x-loc)/scale + np.exp(-(x-loc)/scale) )/2)
 
-def spe_spectrum(x,a1,mu,sigma,a2,loc,scale):
-    return gauss(x,a1,mu,sigma)+landau(x,a2,loc,scale)
+def spe_spectrum(x,a1,mu1,sigma1,a2,loc,scale,a3,mu2,sigma2):
+    return gauss(x,a1,mu1,sigma1) + landau(x,a2,loc,scale) + gauss(x,a3,mu2,sigma2)
 
-def fit_spe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100, spe_div = 15):
+def fit_spe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100, spe_div = 15, sig2=8, save = False):
     area_space = np.linspace(low,high, bins)
     h, t = np.histogram(area, bins=area_space)
-    plt.figure(figsize=(12,6))
+    plt.figure(figsize=(8,4.5))
     a1 = plt.hist(area,bins=area_space,histtype='step',lw=2,density=False)
     #SPE guess
     #idx1, idx2 = np.where(t>fit_range[0])[0][0], np.where(t>fit_range[1])[0][0]
@@ -260,23 +254,34 @@ def fit_spe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100
     idx = np.where(h[:idx1]>hmax/2) 
     ilo, ihi = idx[0][0], idx[0][-1]
     sig0 = (t[ihi]-t[ilo]) / 2.355
-    guess = (hmax, mu, sig,hmax0, mu0, sig0)
-    bounds = ([hmax/2, mu-sig, 0,hmax0/2, mu0-sig0, 0], [2*hmax, mu+sig, 2*sig,2*hmax0, mu+sig0, 2*sig0])
+    guess = (hmax, mu, sig, hmax0, mu0, sig0, hmax/2, 20, 5)
+    print(mu,mu0,(mu+mu0)/2)
+    bounds = ([hmax*0.9, mu-sig, 0,hmax0*0.9, mu0-sig0, 0, 0, mu0, 0],
+              [1.1*hmax, mu+sig, 2*sig, 1.1*hmax0, mu+sig0, 2*sig0, hmax, mu, sig2])
     
     #fit
     popt, pcov = curve_fit(spe_spectrum, t[1:], h, p0 = guess, bounds = bounds)
     perr = np.sqrt(np.diag(pcov))
+    print(popt)
     plt.plot(t, spe_spectrum(t, *popt), label = 'spectrum fit')
-    gauss_int = lambda x : gauss(x, *popt[:3])
-    landau_int = lambda x : landau(x, *popt[3:])
-    nspe, spe_er = integ.quad(gauss_int, 0,t[-1])
-    nbs, bs_er = integ.quad(landau_int, 0,t[-1]) 
+    gauss_spe = lambda x : gauss(x, *popt[:3])
+    gauss_bs = lambda x : gauss(x, *popt[6:])
+    landau_int = lambda x : landau(x, *popt[3:6])
+    #spe_int = lambda x : spe_spectrum(x, *popt)
+    nspe, spe_er = integ.quad(gauss_spe,0,t[-1])
+    print('nspe',nspe)
+    nbs, bs_er = integ.quad(gauss_bs,0,t[-1])
+    print('nbs',nbs)
+    #ntot, tot_er  = integ.quad(spe_int,0,t[-1])
     plt.plot(t, gauss(t, *popt[:3]),label=f'SPE at {popt[1]:.2f} $\pm$ {popt[2]:.2f} ADC x $\mu$s')
-    plt.plot(t, landau(t, *popt[3:]),label=f'{nbs/(nbs+nspe)*100:.1f}% NRBE events')
+    plt.plot(t, landau(t, *popt[3:6]),label=f'SiPM dark counts')
+    plt.plot(t, gauss(t, *popt[6:]),label=f'{nbs/(nspe+nbs)*100:.1f}% Non-Returning')
     #plt.plot(t, spe_spectrum(t, *guess), label = 'guess')
-    plt.title(f'ABALONE at {volts} kV - LED at {ledv:.1f} kV',fontsize=14)
-    plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1,fontsize=14)
-    plt.ylabel('counts',ha='right',y=1,fontsize=14)
-    plt.legend(fontsize=14)
-    
+    #plt.title(f'ABALONE at {volts} kV - LED at {ledv:.1f} V')
+    plt.xlabel('area (ADC x $\mu$s)',ha='right',x=1,fontsize=12)
+    plt.ylabel('counts',ha='right',y=1,fontsize=12)
+    plt.tick_params(axis='x',labelsize=12)
+    plt.tick_params(axis='y',labelsize=12)
+    plt.legend(fontsize=12)
+    if save: plt.savefig('plots/SPEfit.png',dpi=800)
     return popt[1], popt[2], nspe, nbs

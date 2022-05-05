@@ -290,9 +290,9 @@ def plot_spectra(obj,save_path):
     ########################
     
     fig, axs = plt.subplots(2,2,figsize=(13,8))
-    axs[0,0].hist(area_straight_list,bins=bin_number,label = "Straight e-",histtype='step',color='g') #,normed=True
-    axs[0,0].hist(area_returning_list,bins=bin_number,label = "Returning e-",histtype='step',color='b') #,normed=True
-    axs[0,0].hist(area_non_list,bins=bin_number,label = "Non-retrurning",histtype='step',color='r') #,log=True   ,normed=True
+    axs[0,0].hist(area_straight_list,bins=bin_number,label = "Straight",histtype='step',color='g') #,normed=True
+    axs[0,0].hist(area_returning_list,bins=bin_number,label = "Returning",histtype='step',color='b') #,normed=True
+    axs[0,0].hist(area_non_list,bins=bin_number,label = "Non-Returning",histtype='step',color='r') #,log=True   ,normed=True
     axs[0,0].plot(x,y,label="Gaussian Fit",color = 'black')
     axs[0,0].set_title("SiPM area count",fontsize=11)
     axs[0,0].legend(prop={'size': 8})
@@ -300,23 +300,23 @@ def plot_spectra(obj,save_path):
     axs[0,0].relim()
     axs[0,0].autoscale_view()
 
-    axs[1,0].hist(obj.Edep_dist[0],bins=bin_number,histtype='step',label = "Straight e-",color='g') #,log=True
-    axs[1,0].hist(obj.Edep_dist[1],bins=bin_number,histtype='step',label = "Returning e-",color='b') #,log=True
-    axs[1,0].hist(obj.Edep_dist[2],bins=bin_number,histtype='step',label = "Non-retrurning",color='r')
+    axs[1,0].hist(obj.Edep_dist[0],bins=bin_number,histtype='step',label = "Straight",color='g') #,log=True
+    axs[1,0].hist(obj.Edep_dist[1],bins=bin_number,histtype='step',label = "Returning",color='b') #,log=True
+    axs[1,0].hist(obj.Edep_dist[2],bins=bin_number,histtype='step',label = "Non-Returning",color='r')
     axs[1,0].set_title("Energy depposited",fontsize=11)
     axs[1,0].set(xlabel="Energy (keV)")
     axs[1,0].legend(prop={'size': 8})
 
-    axs[0,1].hist(area_straight_list,bins=bin_number,label = "Straight e-",histtype='step',color='g',log=True) #,normed=True
-    axs[0,1].hist(area_returning_list,bins=bin_number,label = "Returning e-",histtype='step',color='b',log=True) #,normed=True
-    axs[0,1].hist(area_non_list,bins=bin_number,label = "Non-retrurning",histtype='step',color='r',log=True) #,log=True   ,normed=True
+    axs[0,1].hist(area_straight_list,bins=bin_number,label = "Straight",histtype='step',color='g',log=True) #,normed=True
+    axs[0,1].hist(area_returning_list,bins=bin_number,label = "Returning",histtype='step',color='b',log=True) #,normed=True
+    axs[0,1].hist(area_non_list,bins=bin_number,label = "Non-Returning",histtype='step',color='r',log=True) #,log=True   ,normed=True
     axs[0,1].set_title("SiPM area count (log-scale)",fontsize=11)
     axs[0,1].legend(prop={'size': 8})
     axs[0,1].set(xlabel='Area')
 
-    axs[1,1].hist(obj.Edep_dist[0],bins=bin_number,histtype='step',color='g',label = "Straight e-",log=True) #,log=True
-    axs[1,1].hist(obj.Edep_dist[1],bins=bin_number,histtype='step',color='b',label = "Returning e-",log=True) #,log=True
-    axs[1,1].hist(obj.Edep_dist[2],bins=bin_number,histtype='step',color='r',label = "Non-retrurning",log=True) #,log=True
+    axs[1,1].hist(obj.Edep_dist[0],bins=bin_number,histtype='step',color='g',label = "Straight",log=True) #,log=True
+    axs[1,1].hist(obj.Edep_dist[1],bins=bin_number,histtype='step',color='b',label = "Returning ",log=True) #,log=True
+    axs[1,1].hist(obj.Edep_dist[2],bins=bin_number,histtype='step',color='r',label = "Non-Returning",log=True) #,log=True
     axs[1,1].legend(prop={'size': 8})
     axs[1,1].set_title("Energy depposited (log-scale)",fontsize=11)
     axs[1,1].set(xlabel="Energy (keV)")

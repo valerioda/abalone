@@ -399,3 +399,15 @@ def plot_risetime_entropy(RTs,ENTRs,bins=200,volts=10,low=0, high=450,low2=1, hi
     plt.title(f'ABALONE at {volts} kV')
     plt.colorbar()
     
+def plot_area_tau(AREAs,TAUs,bins=200,volts=10,low=3.5, high=6,low2=0.5, high2=4.5):
+    area_space = np.logspace(low,high,bins)
+    tau_space = np.linspace(low2,high2,bins)
+    plt.figure(figsize=(12,6))
+    fig, axs = plt.subplots(1, 1, figsize=(12,6))
+    axs = plt.hist2d(AREAs,TAUs,bins=(area_space,tau_space),norm=matplotlib.colors.LogNorm())
+    plt.xscale('log')
+    #plt.yscale('log')
+    plt.xlabel('area (ADC x $\mu$s)', ha='right', x=1, fontsize=12)
+    plt.ylabel('tau', ha='right', y=1, fontsize=12)
+    plt.title(f'ABALONE at {volts} kV')
+    plt.colorbar()

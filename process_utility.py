@@ -406,7 +406,7 @@ def integral_peaks( wf, peaks_list, dtl = -2, dtr = 1,
     return integrals
 
 
-def spectrum_fit(peaks_integral,nsipm,volt,a=0,b=40,bins=1000,hlim=300,firstpe=1,lastpe=12, plot=False):
+def spectrum_fit(peaks_integral,nsipm,volt,a=0,b=40,bins=1000,hlim=300,firstpe=1,lastpe=12, plot=False,save=False):
     h, t = np.histogram(peaks_integral, bins=bins, range=(a,b))
     pe = []
     pe_err = []
@@ -414,7 +414,7 @@ def spectrum_fit(peaks_integral,nsipm,volt,a=0,b=40,bins=1000,hlim=300,firstpe=1
     peaks, _ = find_peaks(h, height=hlim, width=5, distance=15)
     
     if plot:
-        plt.figure(figsize=(12,6))
+        plt.figure(figsize=(8,4.5))
         plt.plot(t[:bins], h, '-', label = f'SiPM-{nsipm} at {volt} V')
         plt.plot(t[peaks], h[peaks], "x")
         plt.xlabel(r'area ($ADC\times \mu$s)',ha='right',x=1,fontsize=12)
@@ -447,7 +447,8 @@ def spectrum_fit(peaks_integral,nsipm,volt,a=0,b=40,bins=1000,hlim=300,firstpe=1
             if plot:
                 X = np.linspace(a, b, num  = 100)
                 plt.plot(X, gaussian(X, *popt), label = f'PE{npe} at {popt[1]:.2f} ADC x us')
-                plt.legend(fontsize=12)
+                plt.legend()
+                if save: plt.savefig('CalibrationSiPMs.png',dpi=800)
             npe += 1
         except:
             print(npe,'fit failed')
@@ -464,7 +465,7 @@ def retta0(x, a):
     return a * x
 
 
-def fit_pe(pe, pe_err, nsipm, volt, firstpe = 1, npe = 14, rlim = 0.1, offset = True):
+def fit_pe(pe, pe_err, nsipm, volt, firstpe = 1, npe = 14, rlim = 0.1, offset = True,save=False):
     x = range(firstpe,len(pe)+firstpe)
     x0 = range(0,len(pe)+firstpe)
     func = retta0
@@ -473,38 +474,39 @@ def fit_pe(pe, pe_err, nsipm, volt, firstpe = 1, npe = 14, rlim = 0.1, offset = 
     perr = np.sqrt(np.diag(pcov))
     
     # plot
-    plt.figure(figsize=(12,6))
+    plt.figure(figsize=(8,4.5))
     plt.errorbar(x, pe, yerr=pe_err,color='b',marker='.',linestyle='',label=f'SiPM-{nsipm} at {volt} V')
     if offset: plt.plot(x0, func(x0, *popt), 'r-',
                         label=f'fit: $a+nPE\cdot b$ \n a=({popt[0]:.2f}$\pm${perr[0]:.2f}) $ADC~x~\mu$s \n b=({popt[1]:.2f}$\pm${perr[1]:.2f}) $ADC~x~\mu$s')
     else: plt.plot(x0, func(x0, *popt), 'r-',
                    label=f'fit: $nPE\cdot a$ \n a=({popt[0]:.2f}$\pm${perr[0]:.2f}) $ADC~x~\mu$s')
-    plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1,fontsize=12)
-    plt.xlabel('PE number',ha='right',x=1,size=40,fontsize=12)
-    plt.legend(fontsize=12)
+    plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1)
+    plt.xlabel('PE number',ha='right',x=1)
+    plt.legend()
     plt.xlim(0,npe)
+    if save: plt.savefig('linearFIT.png',dpi=800)
     
     # residuals
     residual = np.zeros(len(pe))
     for i,p in enumerate(pe):
         residual[i] = p-func(i+firstpe, *popt)
-    plt.figure(figsize=(12,6))
+    plt.figure(figsize=(8,4.5))
     plt.errorbar(x,residual,yerr=pe_err,color='b',marker='.',linestyle='',label='residuals')
-    plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1,fontsize=12)
-    plt.xlabel('PE number',ha='right',x=1,size=40,fontsize=12)
+    plt.ylabel(r'area ($ADC\times \mu$s)',ha='right',y=1)
+    plt.xlabel('PE number',ha='right',x=1)
     plt.axhline(0,color='r')
     plt.xlim(0,npe)
     plt.ylim(-rlim,rlim)
-    plt.legend(fontsize=12)
+    plt.legend()
     return popt, perr
 
-def process_pe_spectrum(nsipm, v, firstpe, lastpe, maxarea, bins, hlim, xlim, ylim, date = 0):
+def process_pe_spectrum(nsipm, v, firstpe, lastpe, maxarea, bins, hlim, xlim, ylim, date = 0, save = False):
     v_int = int(v)
     v_frac = int((v-v_int)*10)
     if date: peakint = np.load(f'SiPM{nsipm}/peakint_SiPM{nsipm}_{v_int}_{v_frac}_LED2p75_{date}.npy')
     else: peakint = np.load(f'SiPM{nsipm}/peakint_SiPM{nsipm}_{v_int}_{v_frac}_LED2p75.npy')
     npeaks = len(peakint[peakint>0])
     print('SiPM',nsipm,'with',v_int+v_frac/10,' V, Number of values:',npeaks)
-    pe, pe_err = spectrum_fit(peakint,nsipm, v,1,maxarea,bins,hlim,firstpe,lastpe,plot=True)
-    par, par_err = fit_pe(pe,pe_err,nsipm, v,firstpe,xlim,ylim,offset=1)
+    pe, pe_err = spectrum_fit(peakint,nsipm, v,1,maxarea,bins,hlim,firstpe,lastpe,plot=True,save=save)
+    par, par_err = fit_pe(pe,pe_err,nsipm, v,firstpe,xlim,ylim,offset=1,save=save)
     return par, par_err, npeaks, pe, pe_err

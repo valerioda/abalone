@@ -232,12 +232,12 @@ class track_and_readout:
         df["X"], df["Y"], df["Z"], df["Time"] = X, Y, Z, Time
         df["KE"], df["DE"] = KE, DE
         df["Volume"] = Volume
-        print(f'\ntime load with new method {time.time() - t_start:.2f}')
-        print('NEW DATAFRAME\n',df)
+        #print(f'\ntime load with new method {time.time() - t_start:.2f}')
+        #print('NEW DATAFRAME\n',df)
         return df,total_len
     
     def electron_count(self,arg): 
-        print('counting electrons with new method...')
+        print('counting electrons...')
         t_start = time.time()
         non_returning = 0     # electrons getting back-scattered to somewhere else
         non_returning_array = []
@@ -304,14 +304,13 @@ class track_and_readout:
 
 
 def gaussian(x, a,mu,sig):
-        return a/(math.sqrt(2.*math.pi)*sig)*np.exp(-np.power((x - mu)/sig, 2.)/2)
+    return a/(math.sqrt(2.*math.pi)*sig)*np.exp(-np.power((x - mu)/sig, 2.)/2)
 
 def leastsquare(a,mu,sig):  #parameter: mu,sigma and (nu?! is nu = mu?!)
     return sum((gaussian(x,a,mu,sig)-y)**2 for x, y in zip(chosen_bin, chosen_yhist))
 
-def plot_spectra(path,PE = 1, angle = 0, xlim = (200,12000), bins = 6000 ):
+def plot_spectra(path,PE = 1, angle = 0, voltage = 25, xlim = (200,12000), bin_number = 150):
     print(f'Results with {PE} PE at angle {angle} deg')
-    bin_number = 150
     
     stat = np.load(path+f'electron_counts/electron_count_{PE}PE_{angle}angle.npy')
     e_ID = np.load(path+f'electron_counts/electron_count_event_{PE}PE_{angle}angle.npy')
@@ -319,28 +318,29 @@ def plot_spectra(path,PE = 1, angle = 0, xlim = (200,12000), bins = 6000 ):
     Edep_dist = np.load(path+f'electron_counts/electron_count_energy_{PE}PE_{angle}angle.npy')
     
     area_straight_list = np.array([area_collection[i] for i in e_ID[0]])
-    area_returning_list = np.array([area_collection[i] for i in e_ID[1]]) 
+    area_returning_list = np.array([area_collection[i] for i in e_ID[1]])
     area_non_list = np.array([area_collection[i] for i in e_ID[2]])
     
     yhist,binedges = np.histogram(area_straight_list,bins=bin_number)
     yhistr,binedgesr = np.histogram(area_returning_list,bins=bin_number)
     yhistn,binedgesn = np.histogram(area_non_list,bins=bin_number)
     bc = np.array((binedges[1:] + binedges[:-1])/2)
+    
     #plt.figure(figsize=(8,4.5))
     #plt.plot(binedges[1:],yhist,label='straight')
     #plt.plot(binedges[1:],yhistr,label='returning')
     #plt.plot(binedges[1:],yhistn,label='non-returning')
     #plt.legend()
     
-    peak_index = np.argmax(yhist)
-    left = 30
-    right = len(yhist)-peak_index - 1
+    #peak_index = np.argmax(yhist)
+    #left = 30
+    #right = len(yhist)-peak_index - 1
 
-    global chosen_bin
-    global chosen_yhist
+    #global chosen_bin
+    #global chosen_yhist
 
-    chosen_bin = bc[peak_index-left:peak_index+right]
-    chosen_yhist= yhist[peak_index-left:peak_index+right]
+    #chosen_bin = bc[peak_index-left:peak_index+right]
+    #chosen_yhist= yhist[peak_index-left:peak_index+right]
     
     #m = iminuit.Minuit(leastsquare,a=max(yhist),mu=bc[peak_index],sig=500,error_a=100, error_mu=100,error_sig=500,errordef=0.5)
     #m = iminuit.Minuit(leastsquare,a=max(yhist),mu=bc[peak_index],sig=2000)
@@ -349,20 +349,21 @@ def plot_spectra(path,PE = 1, angle = 0, xlim = (200,12000), bins = 6000 ):
     #print(m.values)
     ##print(m.errors)
 
-    x= np.linspace(xlim[0],xlim[1],bins)
+    x= np.linspace(xlim[0],xlim[1],bin_number)
     #y = gaussian(x,m.values[0],m.values[1],m.values[2])
     
-    popt, pcov = curve_fit(gaussian, chosen_bin, chosen_yhist,
-                           p0=(max(yhist), bc[peak_index],1000))
-    #print('Fit results',*popt)
+    #popt, pcov = curve_fit(gaussian, chosen_bin, chosen_yhist)
+    #                       p0=(max(yhist), bc[peak_index],1000))
+    
+    popt, pcov = curve_fit(gaussian, bc, yhist, p0=(np.max(yhist), bc[np.argmax(yhist)],1000))
     perr = np.sqrt(np.diag(pcov))
     y = gaussian(x, *popt)
     plt.figure(figsize=(8,4.5))
     plt.scatter(bc,yhist,label = "Straight electrons distribution")
-    plt.scatter(chosen_bin,chosen_yhist,color='r',label="Fitting Data Points")
+    #plt.scatter(chosen_bin,chosen_yhist,color='r',label="Fitting Data Points")
     plt.plot(x,y,label='Gaussian Fit',color = 'black')
-    plt.axvline(bc[peak_index-left],color='red',linestyle=":")
-    plt.axvline(bc[peak_index+right],color='red',linestyle=":",label = "Fitting Range")
+    #plt.axvline(bc[peak_index-left],color='red',linestyle=":")
+    #plt.axvline(bc[peak_index+right],color='red',linestyle=":",label = "Fitting Range")
     plt.ylim(0)
     plt.legend(prop={'size': 8})
     plt.show()
@@ -377,11 +378,24 @@ def plot_spectra(path,PE = 1, angle = 0, xlim = (200,12000), bins = 6000 ):
 
     ########################
     ########################
+    path = './plots/'
+    plt.figure(figsize=(8,4.5))
+    plt.hist(area_straight_list,bins=bin_number,label = "Straight",histtype='step',color='g') #,normed=True
+    plt.hist(area_returning_list,bins=bin_number,label = "Returning",histtype='step',color='b') #,normed=True
+    plt.hist(area_non_list,bins=bin_number,label = "Non-Returning",histtype='step',color='r') #,log=True   ,normed=True
+    plt.plot(x,y,label="Gaussian Fit",color = 'black')
+    #plt.set_title("SiPM area count",fontsize=11)
+    plt.xlabel('area [a.u.]',ha='right',x=1,fontsize=12)
+    plt.ylabel('counts',ha='right',y=1,fontsize=12)
+    plt.tick_params(axis='x',labelsize=12)
+    plt.tick_params(axis='y',labelsize=12)
+    plt.legend(fontsize=12)
+    plt.savefig(path+"Spectra_"+str(PE)+"_pe_angle_"+str(angle)+"_voltage"+str(voltage),dpi=800)
     
     fig, axs = plt.subplots(2,2,figsize=(13,8))
-    axs[0,0].hist(area_straight_list,bins=bin_number,label = "Straight e-",histtype='step',color='g') #,normed=True
-    axs[0,0].hist(area_returning_list,bins=bin_number,label = "Returning e-",histtype='step',color='b') #,normed=True
-    axs[0,0].hist(area_non_list,bins=bin_number,label = "Non-returning",histtype='step',color='r') #,log=True   ,normed=True
+    axs[0,0].hist(area_straight_list,bins=bin_number,label = "Straight",histtype='step',color='g') #,normed=True
+    axs[0,0].hist(area_returning_list,bins=bin_number,label = "Returning",histtype='step',color='b') #,normed=True
+    axs[0,0].hist(area_non_list,bins=bin_number,label = "Non-Returning",histtype='step',color='r') #,log=True   ,normed=True
     axs[0,0].plot(x,y,label="Gaussian Fit",color = 'black')
     axs[0,0].set_title("SiPM area count",fontsize=11)
     axs[0,0].legend(prop={'size': 8})
@@ -412,12 +426,14 @@ def plot_spectra(path,PE = 1, angle = 0, xlim = (200,12000), bins = 6000 ):
 
     fig.suptitle(str(PE)+ " PE event Spectra at angle "+str(angle)+" deg",fontsize=12)
     plt.subplots_adjust(hspace = 0.25)
-    path = './plots/'
+    
     if not os.path.exists(path):
         os.makedirs(path)
         
-    plt.savefig(path+"Spectra_"+str(PE)+"_pe_angle_"+str(angle)) 
+    plt.savefig(path+"SpectraAll_"+str(PE)+"_pe_angle_"+str(angle)) 
     plt.show()
+    
+    return popt
     
 def e_stat_bootstrap(path,PE=1,angle=0):
     e_stat = np.load(path+f'electron_counts/electron_count_{PE}PE_{angle}angle.npy')
