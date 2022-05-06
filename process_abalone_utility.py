@@ -285,3 +285,113 @@ def fit_spe_spectrum(area, bins = 200, volts = 10, ledv = 3, low = 0, high = 100
     plt.legend(fontsize=12)
     if save: plt.savefig('plots/SPEfit.png',dpi=800)
     return popt[1], popt[2], nspe, nbs
+
+
+def calculate_integrals( data, volts = 15, sipmv = 30, nn = 0, plot = False,
+                        inf = 480, sup = 550, info = 'file1', save = False):
+    if nn == 0: nn = len(data)
+    peakint = np.zeros(nn)
+    print('Total events:',nn)
+    MAXs, AREAs, POSs, TAUs, INTs = [], [], [], [], []
+    t_start = time.time()
+    wsize = data.shape[1]
+    hsize= int(wsize/2)
+    tt = np.array([i for i in range(wsize)]) # time in bin-size
+    for i in range(nn):
+        diff = time.time() - t_start
+        if ((i+1) % 10000) == 0:
+            print(f'event n. {i+1}, time to process: {diff:.2f}')
+        
+        bl = np.mean(data[i][hsize-100:hsize-30])
+        wf = bl-data[i]
+        max_pos = np.where(wf==np.max(wf))[0][0]
+        maxx = np.max(wf)
+        
+        try:
+            tt10 = np.where(wf[max_pos:]<maxx*0.1)[0][0] + max_pos
+            tt90 = np.where(wf[max_pos:]<maxx*0.9)[0][0] + max_pos
+            tau = tt10 - tt90
+        except:
+            tau = 0
+        TAUs.append(tau)
+        
+        area = np.sum(wf[max_pos-10:max_pos+90])
+        AREAs.append(area)
+        MAXs.append(np.max(wf))
+        
+        # INTEGRAL CALCULATION
+        n = 4
+        dled = wf[4:] - wf[:-4]
+        listpeaks,_ = find_peaks(dled, height=7)
+        peakpos = listpeaks[(listpeaks < sup) & (listpeaks > inf)]
+        if (len(peakpos) != 1) or (maxx <= 0):
+            if plot:
+                print('peak position not found in trigger region',listpeaks)
+                plt.figure(figsize=(12,6))
+                plt.plot(tt,wf,label='signal')
+                plt.plot(tt[:-4],dled,label='signal')
+                plt.xlim(400,700)
+            INTs.append(0)
+            POSs.append(0)
+        else:
+            peakpos = peakpos[0]
+            if maxx < 30:
+                dtl, dtr, tfit, tlim, tll = -2, 3, 20, 100, 7
+                #TYPEs.append(1)
+            else:
+                dtl, dtr, tfit, tlim, tll = -5, 15, 50, 200, 20
+                #TYPEs.append(0)
+            tl = tt[(tt <= peakpos+dtr) & (tt >= peakpos+dtl)]
+            wfl = wf[(tt <= peakpos+dtr) & (tt >= peakpos+dtl)]
+            Il = integ.simps(wfl, tl)
+            # calculation of real integral of the waveform
+            try:
+                real_t = tt[(tt <= peakpos+tlim) & (tt >= peakpos+dtl)]
+                real_wf = wf[(tt <= peakpos+tlim) & (tt >= peakpos+dtl)]
+                intreal = integ.simps(real_wf, real_t)
+                tr = tt[peakpos+dtr:peakpos+tfit] # time window for the fit
+                bl = np.mean(wf[peakpos-tll:peakpos])
+                tr2 = tr - tr[0]
+                def expo(c):
+                    return(lambda x, a, b : c + a*np.exp(-b*x))
+                fct_fit = expo(bl) # fct used for the fit
+                guess = [maxx, 0.07]
+                popt, pcov = curve_fit(fct_fit, tr2, wf[tr],p0 = guess,
+                                    bounds =  ([maxx*0.1, 0.001], [maxx*1.5, 0.2]))
+                a, b = popt
+                tnew = tt[tr[0]:]
+                fct_fit_tot = fct_fit((tnew-tr[0]),a,b)
+                fct_fit_g = fct_fit((tnew-tr[0]),guess[0],guess[1])
+                tnew2 = min(tlim, tt[-1]-tr[0])
+                tplot = tt[peakpos + dtl -20 : peakpos + tnew2 + 20]
+                if plot:
+                    plt.figure(figsize=(12,6))
+                    plt.plot(tplot,wf[peakpos+dtl-20:peakpos+tnew2+20],label='signal')
+                    plt.plot(tnew[:tnew2], fct_fit_tot[:tnew2],
+                            label=f'fit f(x) = bl + a*exp(-b*x):\n a = {a:.2f}, b = {b:.4f}')
+                    plt.axhline(bl, color = 'r', label = 'baseline')
+                    plt.vlines((peakpos+dtl), wf[peakpos+dtl]-10, bl+10, colors = 'g',
+                                label = 'integration limits')
+                    plt.vlines((peakpos+dtr), wf[peakpos+dtr]-10, bl+10, colors = 'g')
+                    plt.vlines((peakpos+tfit), wf[peakpos+tfit]-10, bl+10, colors = 'c',
+                                label = 'fit limit')
+                    plt.vlines((peakpos+tlim), wf[peakpos+tlim]-10, bl+10, colors = 'g')
+                    plt.xlabel(r'time (samples)',ha='right',x=1)
+                    plt.ylabel('amplitude',ha='right',y=1)
+                    plt.legend()
+                fct_int = lambda x : bl + fct_fit(x, a, b)
+                Ir, err = integ.quad(fct_int, 0, (tlim-dtr))
+                inttot = Il + Ir
+                INTs.append(inttot)
+                POSs.append(peakpos)
+            except:
+                INTs.append(0)
+                POSs.append(0)
+    data = pd.DataFrame(columns=['area','integral','peak_max','max_pos','tau'])
+    data['area'] = AREAs
+    data['integral'] = INTs
+    data['peak_max'] = MAXs
+    data['max_pos'] = POSs
+    data['tau'] = TAUs
+    if save: data.to_hdf(f'processed_data/data_tailFit_ABALONE_{volts}kV_SiPM2_{sipmv}V_{info}.h5', key='df', mode='w')
+    return data
